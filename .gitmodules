@@ -1,0 +1,18 @@
+[submodule "anchorlinksharp"]
+	path = anchorlinksharp
+	url = https://github.com/liquiidio/AnchorLinkSharp-Private
+[submodule "anchorlinktransportsharp"]
+	path = anchorlinktransportsharp
+	url = https://github.com/liquiidio/AnchorLinkTransportSharp-Private
+[submodule "eosiosigningrequest"]
+	path = eosiosigningrequest
+	url = https://github.com/liquiidio/EosioSigningRequest-Private
+[submodule "atomicassetsapiclient"]
+	path = atomicassetsapiclient
+	url = https://github.com/liquiidio/AtomicAssetsApiClient-Private
+[submodule "atomicmarketapiclient"]
+	path = atomicmarketapiclient
+	url = https://github.com/liquiidio/AtomicMarketApiClient-Private
+[submodule "hyperionapiclient"]
+	path = hyperionapiclient
+	url = https://github.com/liquiidio/HyperionApiClient-Private
