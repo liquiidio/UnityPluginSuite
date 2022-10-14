@@ -6,7 +6,7 @@
 	url = https://github.com/liquiidio/AnchorLinkTransportSharp-Private
 [submodule "eosiosigningrequest"]
 	path = eosiosigningrequest
-	url = https://github.com/liquiidio/EosioSigningRequest-Private
+	url = https://github.com/liquiidio/EosioSigningRequestSharp-Private
 [submodule "atomicassetsapiclient"]
 	path = atomicassetsapiclient
 	url = https://github.com/liquiidio/AtomicAssetsApiClient-Private
