@@ -25,13 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AtomicMarketApiClient.Core.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AtomicMarketApiClient.Test", "atomicmarketapiclient\AtomicMarketApiClient.Test\AtomicMarketApiClient.Test.csproj", "{3131E390-30BD-4560-85AE-E33791872341}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EosioSigningRequestSharp", "eosiosigningrequest\EosioSigningRequestSharp.csproj", "{567C89E1-81F7-490A-86D5-E04368C7C757}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EosSharp", "eossharp\EosSharp\EosSharp\EosSharp.csproj", "{52874A72-3A59-450C-A87F-BB0C9A476028}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EosSharp.Core", "eossharp\EosSharp\EosSharp.Core\EosSharp.Core.csproj", "{1E37E39B-DFE5-4A06-8207-FD2796C52C0B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EosSharp.UnitTests", "eossharp\EosSharp\EosSharp.UnitTests\EosSharp.UnitTests.csproj", "{969C1A19-C591-4EAE-A8F3-AE39878CA2C2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EosSharp.UnitTests.Core", "eossharp\EosSharp\EosSharp.UnitTests.Core\EosSharp.UnitTests.Core.csproj", "{CA99E0C4-5467-457C-92FB-084EF0450D15}"
 EndProject
@@ -42,6 +38,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HyperionApiClient", "hyperionapiclient\HyperionApiClient\HyperionApiClient.csproj", "{9262F82A-2D6F-45CB-98F6-F7714EA5F83F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HyperionApiClientUnitTests", "hyperionapiclient\HyperionApiClientUnitTests\HyperionApiClientUnitTests.csproj", "{B7687233-B290-48D1-8221-82438E7F6D95}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EosioSigningRequestSharp", "EosioSigningRequestSharp\EosioSigningRequestSharp.csproj", "{9070DF26-6AB9-4861-AE8E-AFE4994F6742}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,10 +91,6 @@ Global
 		{3131E390-30BD-4560-85AE-E33791872341}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3131E390-30BD-4560-85AE-E33791872341}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3131E390-30BD-4560-85AE-E33791872341}.Release|Any CPU.Build.0 = Release|Any CPU
-		{567C89E1-81F7-490A-86D5-E04368C7C757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{567C89E1-81F7-490A-86D5-E04368C7C757}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{567C89E1-81F7-490A-86D5-E04368C7C757}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{567C89E1-81F7-490A-86D5-E04368C7C757}.Release|Any CPU.Build.0 = Release|Any CPU
 		{52874A72-3A59-450C-A87F-BB0C9A476028}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{52874A72-3A59-450C-A87F-BB0C9A476028}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52874A72-3A59-450C-A87F-BB0C9A476028}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -105,10 +99,6 @@ Global
 		{1E37E39B-DFE5-4A06-8207-FD2796C52C0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E37E39B-DFE5-4A06-8207-FD2796C52C0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E37E39B-DFE5-4A06-8207-FD2796C52C0B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{969C1A19-C591-4EAE-A8F3-AE39878CA2C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{969C1A19-C591-4EAE-A8F3-AE39878CA2C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{969C1A19-C591-4EAE-A8F3-AE39878CA2C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{969C1A19-C591-4EAE-A8F3-AE39878CA2C2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CA99E0C4-5467-457C-92FB-084EF0450D15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CA99E0C4-5467-457C-92FB-084EF0450D15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA99E0C4-5467-457C-92FB-084EF0450D15}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -129,6 +119,10 @@ Global
 		{B7687233-B290-48D1-8221-82438E7F6D95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7687233-B290-48D1-8221-82438E7F6D95}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7687233-B290-48D1-8221-82438E7F6D95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9070DF26-6AB9-4861-AE8E-AFE4994F6742}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9070DF26-6AB9-4861-AE8E-AFE4994F6742}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9070DF26-6AB9-4861-AE8E-AFE4994F6742}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9070DF26-6AB9-4861-AE8E-AFE4994F6742}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
