@@ -19,3 +19,6 @@
 [submodule "eossharp"]
 	path = eossharp
 	url = https://github.com/liquiidio/EosSharp-Private.git
+[submodule "EosioSigningRequestSharp"]
+	path = EosioSigningRequestSharp
+	url = https://github.com/liquiidio/EosioSigningRequestSharp-Private.git
