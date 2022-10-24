@@ -39,7 +39,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HyperionApiClient", "hyperi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HyperionApiClientUnitTests", "hyperionapiclient\HyperionApiClientUnitTests\HyperionApiClientUnitTests.csproj", "{B7687233-B290-48D1-8221-82438E7F6D95}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EosioSigningRequestSharp", "EosioSigningRequestSharp\EosioSigningRequestSharp.csproj", "{9070DF26-6AB9-4861-AE8E-AFE4994F6742}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EosioSigningRequestSharp", "EosioSigningRequestSharp\EosioSigningRequestSharp.csproj", "{DD651CB4-BBA1-48EF-A100-9C9621DB02D9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnchorLinkTestApp", "AnchorLinkTestApp\AnchorLinkTestApp.csproj", "{5C295ACA-CC20-4136-A007-1ABD1CF849DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -119,10 +121,14 @@ Global
 		{B7687233-B290-48D1-8221-82438E7F6D95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7687233-B290-48D1-8221-82438E7F6D95}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7687233-B290-48D1-8221-82438E7F6D95}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9070DF26-6AB9-4861-AE8E-AFE4994F6742}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9070DF26-6AB9-4861-AE8E-AFE4994F6742}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9070DF26-6AB9-4861-AE8E-AFE4994F6742}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9070DF26-6AB9-4861-AE8E-AFE4994F6742}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD651CB4-BBA1-48EF-A100-9C9621DB02D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD651CB4-BBA1-48EF-A100-9C9621DB02D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD651CB4-BBA1-48EF-A100-9C9621DB02D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD651CB4-BBA1-48EF-A100-9C9621DB02D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C295ACA-CC20-4136-A007-1ABD1CF849DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C295ACA-CC20-4136-A007-1ABD1CF849DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C295ACA-CC20-4136-A007-1ABD1CF849DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C295ACA-CC20-4136-A007-1ABD1CF849DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
