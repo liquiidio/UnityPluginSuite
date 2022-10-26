@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
-using AnchorLinkSharp;
-using AnchorLinkUnityTransportSharp;
-using EosSharp;
-using EosSharp.Core;
 using Newtonsoft.Json;
 
 namespace AnchorLinkTestApp
@@ -16,11 +11,11 @@ namespace AnchorLinkTestApp
             try
             {
                 var loginExample = new LoginExample();
-                await loginExample.login();
+                await loginExample.Login();
                 try
                 {
                     // throws if the account doesn't have enough CPU
-                    await loginExample.transfer();
+                    await loginExample.Transfer();
                 }
                 catch (Exception e)
                 {
@@ -28,7 +23,7 @@ namespace AnchorLinkTestApp
                 }
                 // logout removes the session so it's not restorable
 //                await loginExample.logout();
-                await loginExample.restoreSession();
+                await loginExample.RestoreSession();
             }
             catch (Exception e)
             {
@@ -39,7 +34,7 @@ namespace AnchorLinkTestApp
             try
             {
                 var transactExample = new TransactExample();
-                transactExample.vote();
+                transactExample.Vote();
             }
             catch (Exception e)
             {

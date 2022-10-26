@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using AnchorLinkSharp;
 using AnchorLinkUnityTransportSharp;
-using EosSharp;
-using EosSharp.Core;
 using EosSharp.Core.Api.v1;
 
 namespace AnchorLinkTestApp
@@ -12,13 +10,13 @@ namespace AnchorLinkTestApp
     {
 
         // initialize the link
-        private AnchorLink link = new AnchorLink(new LinkOptions()
+        private readonly AnchorLink _link = new AnchorLink(new LinkOptions()
         {
-            transport = new UnityTransport(new TransportOptions()),
-            chainId = "4667b205c6838ef70ff7988f6e8257e8be0e1284a2f59699054a018f743b1d11",
-            rpc = "https://telos.greymass.com",
+            Transport = new UnityTransport(new TransportOptions()),
+            ChainId = "4667b205c6838ef70ff7988f6e8257e8be0e1284a2f59699054a018f743b1d11",
+            Rpc = "https://telos.greymass.com",
             ZlibProvider = new NetZlibProvider(),
-            storage = new JsonLocalStorage()
+            Storage = new JsonLocalStorage()
             //chains: [{
             //    chainId: 'aca376f206b8fc25a6ed44dbdc66547c36c6c33e3a119ffbeaef943642f0e906',
             //    nodeUrl: 'https://eos.greymass.com',
@@ -28,7 +26,7 @@ namespace AnchorLinkTestApp
 
 
         // the EOSIO action we want to sign and broadcast
-        public EosSharp.Core.Api.v1.Action action = new EosSharp.Core.Api.v1.Action()
+        public EosSharp.Core.Api.v1.Action Action = new EosSharp.Core.Api.v1.Action()
         {
             account = "eosio",
             name = "voteproducer",
@@ -49,11 +47,11 @@ namespace AnchorLinkTestApp
         };
 
         // ask the user to sign the transaction and then broadcast to chain
-        public void vote()
+        public void Vote()
         {
-            link.transact(new TransactArgs() { action = action }).ContinueWith(transactTask =>
+            _link.Transact(new TransactArgs() { Action = Action }).ContinueWith(transactTask =>
             {
-                Console.WriteLine($"Thank you {transactTask.Result.signer.actor}");
+                Console.WriteLine($"Thank you {transactTask.Result.Signer.actor}");
             });
         }
     }
