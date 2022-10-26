@@ -22,3 +22,24 @@
 [submodule "EosioSigningRequestSharp"]
 	path = Assets/Scripts/EosioSigningRequestSharp
 	url = https://github.com/liquiidio/EosioSigningRequestSharp-Private.git
+[submodule "Packages/eosiosigningrequestsharp"]
+	path = Packages/eosiosigningrequestsharp
+	url = https://github.com/liquiidio/EosioSigningRequestSharp-Private.git
+[submodule "Packages/anchorlinksharp"]
+	path = Packages/anchorlinksharp
+	url = https://github.com/liquiidio/AnchorLinkSharp-Private
+[submodule "Packages/anchorlinktransportsharp"]
+	path = Packages/anchorlinktransportsharp
+	url = https://github.com/liquiidio/AnchorLinkTransportSharp-Private
+[submodule "Packages/atomicassetsapiclient"]
+	path = Packages/atomicassetsapiclient
+	url = https://github.com/liquiidio/AtomicAssetsApiClient-Private
+[submodule "Packages/atomicmarketapiclient"]
+	path = Packages/atomicmarketapiclient
+	url = https://github.com/liquiidio/AtomicMarketApiClient-Private
+[submodule "Packages/hyperionapiclient"]
+	path = Packages/hyperionapiclient
+	url = https://github.com/liquiidio/HyperionApiClient-Private
+[submodule "Packages/eossharp"]
+	path = Packages/eossharp
+	url = https://github.com/liquiidio/EosSharp-Private.git
