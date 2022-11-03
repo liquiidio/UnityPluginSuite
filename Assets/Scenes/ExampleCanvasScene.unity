@@ -273,7 +273,7 @@ GameObject:
   - component: {fileID: 30324400}
   - component: {fileID: 30324399}
   m_Layer: 5
-  m_Name: QRCodeHolderTargetButton
+  m_Name: StaticQRCodeHolderTargetButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2661,10 +2661,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d61d0ee4441d30b4692d4936696ff723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  QRCodeHolderTargetButton: {fileID: 30324399}
+  ESRLink: 
+  LoginPanel: {fileID: 1125267992}
+  HyperlinkCopiedNotificationPanel: {fileID: 0}
+  CloseLoginScreenButton: {fileID: 364967505}
+  StaticQRCodeHolderTargetButton: {fileID: 30324399}
+  ResizableQRCodeHolderTargetButton: {fileID: 2071563426}
   HyperlinkCopyButton: {fileID: 1822843824}
-  ESRLink: fooForTestin4
-  HyperlinkCopiedNotificationPanel: {fileID: 1683690538}
+  LaunchAnchorButton: {fileID: 1457345368}
 --- !u!1 &1958366828
 GameObject:
   m_ObjectHideFlags: 0
@@ -2825,13 +2829,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1000582137}
-        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-        m_MethodName: SetTrigger
-        m_Mode: 5
+      - m_Target: {fileID: 1946143163}
+        m_TargetAssemblyTypeName: Assets.Packages.AnchorLinkTransportSharp.UnityCanvasTransport,
+          Assembly-CSharp
+        m_MethodName: OnResizableQRCodeHolderTargetButtonPressed
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1000582134}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: doZoomOut
