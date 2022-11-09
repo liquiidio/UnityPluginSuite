@@ -407,11 +407,13 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\Packages\System.Drawing.Common.4.5.0-preview1-25914-04\version.txt" />
+    <None Include="Assets\Packages\System.Drawing.Common.4.5.0-preview1-25914-04\useSharedDesignerContext.txt" />
+    <None Include="Assets\Packages\System.Drawing.Common.4.5.0-preview1-25914-04\lib\netstandard2.0\System.Drawing.Common.dll" />
     <None Include="Assets\Packages\anchorlinksharp\AnchorLinkSharp\websocket-sharp\LICENSE.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\Packages\System.Drawing.Common.4.5.0-preview1-25914-04\useSharedDesignerContext.txt" />
     <None Include="Assets\Packages\Cryptography.ECDSA.dll" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
@@ -419,20 +421,18 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-    <None Include="Assets\Packages\System.Drawing.Common.4.5.0-preview1-25914-04\LICENSE.TXT" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\Packages\anchorlinktransportsharp\ZXing\unity\zxing.unity.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\Packages\System.Drawing.Common.4.5.0-preview1-25914-04\LICENSE.TXT" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-    <None Include="Assets\Packages\System.Drawing.Common.4.5.0-preview1-25914-04\version.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\Packages\System.Drawing.Common.4.5.0-preview1-25914-04\lib\netstandard2.0\System.Drawing.Common.dll" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\Packages\System.Drawing.Common.4.5.0-preview1-25914-04\THIRD-PARTY-NOTICES.TXT" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\Packages\anchorlinktransportsharp\ZXing\unity\zxing.unity.dll" />
-    <None Include="Assets\Packages\System.Drawing.Common.4.5.0-preview1-25914-04\THIRD-PARTY-NOTICES.TXT" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
@@ -679,8 +679,8 @@
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>C:\Program Files\Unity\2021.3.11f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
-    <Reference Include="System.Drawing.Common">
-      <HintPath>Assets\Packages\System.Drawing.Common.4.5.0-preview1-25914-04\lib\netstandard2.0\System.Drawing.Common.dll</HintPath>
+    <Reference Include="zxing.unity">
+      <HintPath>Assets\Packages\anchorlinktransportsharp\ZXing\unity\zxing.unity.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
@@ -691,8 +691,8 @@
     <Reference Include="Cryptography.ECDSA">
       <HintPath>Assets\Packages\Cryptography.ECDSA.dll</HintPath>
     </Reference>
-    <Reference Include="zxing.unity">
-      <HintPath>Assets\Packages\anchorlinktransportsharp\ZXing\unity\zxing.unity.dll</HintPath>
+    <Reference Include="System.Drawing.Common">
+      <HintPath>Assets\Packages\System.Drawing.Common.4.5.0-preview1-25914-04\lib\netstandard2.0\System.Drawing.Common.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\2021.3.11f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
