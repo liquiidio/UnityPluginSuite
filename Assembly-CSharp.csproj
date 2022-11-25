@@ -144,6 +144,7 @@
     <Compile Include="Assets\Packages\atomicmarketapiclient\AtomicMarketApiClient\Stats\StatsApi.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\HyperionApiClient\Responses\GetActivatedProtocolFeaturesResponse.cs" />
     <Compile Include="Assets\Packages\atomicassetsapiclient\AtomicAssetsApiClient\Accounts\AccountCollectionDto.cs" />
+    <Compile Include="Assets\Packages\WCWUnityWebGL\Src\WaxCloudWalletPlugin.cs" />
     <Compile Include="Assets\Packages\anchorlinksharp\AnchorLinkSharp\LinkSignatureProvider.cs" />
     <Compile Include="Assets\Packages\atomicmarketapiclient\AtomicMarketApiClient\Stats\CollectionsDto.cs" />
     <Compile Include="Assets\Packages\eossharp\EosSharp\EosSharp.Core\EosConfigurator.cs" />
@@ -204,6 +205,7 @@
     <Compile Include="Assets\Packages\hyperionapiclient\HyperionApiClient\Models\Transaction.cs" />
     <Compile Include="Assets\Packages\atomicassetsapiclient\AtomicAssetsApiClient\Templates\TemplatesApi.cs" />
     <Compile Include="Assets\Packages\anchorlinksharp\AnchorLinkSharp\LinkChannelSessionData.cs" />
+    <Compile Include="Assets\Packages\WombatUnityWebGl\Src\WombatPlugin.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\HyperionApiClient\Responses\GetCreatedAccountsResponse.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\HyperionApiClient\Models\Header.cs" />
     <Compile Include="Assets\Packages\anchorlinksharp\AnchorLinkSharp\SealedMessage.cs" />
@@ -215,6 +217,7 @@
     <Compile Include="Assets\Packages\atomicassetsapiclient\AtomicAssetsApiClient\Burns\BurnDto.cs" />
     <Compile Include="Assets\Packages\eossharp\EosSharp\EosSharp.Core\Api\v1\EosApi.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\HyperionApiClient\Models\Event.cs" />
+    <Compile Include="Assets\Packages\WCWUnityWebGL\Examples\WaxCloudWalletSampleScript.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\HyperionApiClient\Models\AccountRamDelta.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\HyperionApiClient\Responses\GetBlockResponse2.cs" />
     <Compile Include="Assets\Packages\anchorlinksharp\AnchorLinkSharp\ChannelInfo.cs" />
@@ -278,6 +281,7 @@
     <Compile Include="Assets\Packages\hyperionapiclient\HyperionApiClient\Clients\StatsClient.cs" />
     <Compile Include="Assets\Packages\atomicassetsapiclient\AtomicAssetsApiClient\Offers\OffersDto.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\HyperionApiClient\Models\ExtendedLink.cs" />
+    <Compile Include="Assets\Packages\WombatUnityWebGl\Examples\WombatSampleScript.cs" />
     <Compile Include="Assets\Packages\atomicmarketapiclient\AtomicMarketApiClient\Stats\SalesDto.cs" />
     <Compile Include="Assets\Packages\eossharp\EosSharp\EosSharp.Core\Providers\CombinedSignersProvider.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\HyperionApiClient\Models\Struct.cs" />
@@ -306,6 +310,7 @@
     <Compile Include="Assets\Packages\eosiosigningrequestsharp\SigningRequestAbi.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\HyperionApiClient\Models\Account.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\HyperionApiClient\Models\Health.cs" />
+    <Compile Include="Assets\Packages\WombatUnityWebGl\Src\Network.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\HyperionApiClient\Models\Abi.cs" />
     <Compile Include="Assets\Packages\atomicmarketapiclient\AtomicMarketApiClient\Assets\AssetsUriParameterBuilder.cs" />
     <Compile Include="Assets\Packages\anchorlinktransportsharp\Src\Transports\UiToolkit\Ui\LoadingPanel.cs" />
@@ -335,6 +340,15 @@
     <Compile Include="Assets\Packages\hyperionapiclient\HyperionApiClient\Models\ExtendedAct.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\HyperionApiClient\Models\ApiException.cs" />
     <Compile Include="Assets\Packages\atomicmarketapiclient\AtomicMarketApiClient\BuyOffers\BuyOffersDto.cs" />
+    <Compile Include="Assets\Packages\UniversalAuthenticatorLibrarySharp\Src\User.cs" />
+    <Compile Include="Assets\Packages\UniversalAuthenticatorLibrarySharp\Src\Authenticator.cs" />
+    <Compile Include="Assets\Packages\UniversalAuthenticatorLibrarySharp\Src\UnityUAL\ButtonStyle.cs" />
+    <Compile Include="Assets\Packages\UniversalAuthenticatorLibrarySharp\Examples\ExampleAuthenticator.cs" />
+    <Compile Include="Assets\Packages\UniversalAuthenticatorLibrarySharp\Src\UnityUAL\UnityUAL.cs" />
+    <Compile Include="Assets\Packages\UniversalAuthenticatorLibrarySharp\Examples\ExampleUser.cs" />
+    <Compile Include="Assets\Packages\UniversalAuthenticatorLibrarySharp\Src\UAL.cs" />
+    <Compile Include="Assets\Packages\UniversalAuthenticatorLibrarySharp\Examples\ExampleScript.cs" />
+    <Compile Include="Assets\Packages\UniversalAuthenticatorLibrarySharp\Src\Interfaces.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Packages\anchorlinktransportsharp\Src\Transports\UiToolkit\Ui\FailurePanel.uxml" />
@@ -378,7 +392,9 @@
     <None Include="Assets\Packages\anchorlinktransportsharp\Packages\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\Packages\WCWUnityWebGL\Examples\WaxCloudWalletSampleScreen.uxml" />
     <None Include="Assets\Packages\anchorlinktransportsharp\Packages\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\Packages\WombatUnityWebGl\Examples\WombatSampleScreen.uxml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
