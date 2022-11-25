@@ -21,7 +21,7 @@
 	url = https://github.com/liquiidio/EosSharp-Private.git
 [submodule "Assets/Packages/WcwUnityWebGl"]
 	path = Assets/Packages/WcwUnityWebGl
-	url = https://github.com/liquiidio/WombatUnityWebGl.git
+	url = https://github.com/liquiidio/WcwUnityWebGl.git
 [submodule "Assets/Packages/WombatUnityWebGl"]
 	path = Assets/Packages/WombatUnityWebGl
 	url = https://github.com/liquiidio/WombatUnityWebGl.git
