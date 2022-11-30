@@ -28,3 +28,6 @@
 [submodule "Assets/Packages/universalauthenticatorlibrarysharp"]
 	path = Assets/Packages/universalauthenticatorlibrarysharp
 	url = https://github.com/liquiidio/UniversalAuthenticatorLibrarySharp.git
+[submodule "Assets/Packages/universalauthenticatorlibrary"]
+	path = Assets/Packages/universalauthenticatorlibrary
+	url = https://github.com/liquiidio/UniversalAuthenticatorLibrarySharp.git
