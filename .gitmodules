@@ -19,3 +19,6 @@
 [submodule "Assets/Packages/eossharp"]
 	path = Assets/Packages/eossharp
 	url = https://github.com/liquiidio/EosSharp-Private.git
+[submodule "Assets/Packages/universalauthenticatorlibrary"]
+	path = Assets/Packages/universalauthenticatorlibrary
+	url = https://github.com/liquiidio/UniversalAuthenticatorLibrarySharp.git
