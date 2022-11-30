@@ -19,12 +19,3 @@
 [submodule "Assets/Packages/eossharp"]
 	path = Assets/Packages/eossharp
 	url = https://github.com/liquiidio/EosSharp-Private.git
-[submodule "Assets/Packages/wcwunitywebgl"]
-	path = Assets/Packages/wcwunitywebgl
-	url = https://github.com/liquiidio/WCWUnityWebGl.git
-[submodule "Assets/Packages/wombatunitywebgl"]
-	path = Assets/Packages/wombatunitywebgl
-	url = https://github.com/liquiidio/WombatUnityWebGl.git
-[submodule "Assets/Packages/universalauthenticatorlibrarysharp"]
-	path = Assets/Packages/universalauthenticatorlibrarysharp
-	url = https://github.com/liquiidio/UniversalAuthenticatorLibrarySharp.git
