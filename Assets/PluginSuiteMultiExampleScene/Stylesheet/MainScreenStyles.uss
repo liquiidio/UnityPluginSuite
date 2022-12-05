@@ -12,7 +12,7 @@
 .label-tag {
     transition-duration: 0s;
     transition-timing-function: ease;
-    -unity-font: url('project://database/Assets/PluginSuiteMultiExampleScene/Fonts/Syncopate-Regular.ttf?fileID=12800000&guid=c645c133fe43beb4ea9a563e7f422f1c&type=3#Syncopate-Regular');
+    -unity-font: url('project://database/Assets/PluginSuiteMultiExampleScene/Fonts/Syncopate-Bold SDF.asset');
     -unity-font-style: bold;
     font-size: 24px;
 }
@@ -22,7 +22,7 @@
     transition-timing-function: ease-out-back;
     scale: 1.2 1.2;
     color: rgb(255, 255, 255);
-    -unity-font: url('project://database/Assets/PluginSuiteMultiExampleScene/Fonts/Syncopate-Regular.ttf?fileID=12800000&guid=c645c133fe43beb4ea9a563e7f422f1c&type=3#Syncopate-Regular');
+    -unity-font: url('project://database/Assets/PluginSuiteMultiExampleScene/Fonts/Syncopate-Bold SDF.asset');
     font-size: 26px;
     -unity-font-style: bold;
 }
@@ -46,7 +46,7 @@
 
 #screen {
     flex-grow: 1;
-    background-image: url('project://database/Assets/PluginSuiteMultiExampleScene/Sprites/11%20HRRed%20Alert.jpg?fileID=2800000&guid=a761484c670d3ae4daec93e493521228&type=3#11 HRRed Alert');
+    background-image: url('project://database/Assets/PluginSuiteMultiExampleScene/Sprites/11 HRRed Alert.jpg');
     flex-direction: row;
 }
 
