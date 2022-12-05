@@ -39,7 +39,6 @@ x64/
 *_i.c
 *_p.c
 *.ilk
-*.meta
 *.obj
 *.pch
 *.pdb
@@ -59,10 +58,6 @@ x64/
 *.pidb
 *.log
 *.scc
-
-# OS generated files #
-.DS_Store*
-Icon?
 
 # Visual C++ cache files
 ipch/
