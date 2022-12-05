@@ -13,7 +13,7 @@ public class MainScreen : MonoBehaviour
      */
     private VisualElement _menu;
     private VisualElement _canvasWidgetScene;
-    private VisualElement _uiTookliWidgetScene;
+    private VisualElement _uiTookitWidgetScene;
     private VisualElement[] _mainMenuOptions;
     private List<VisualElement> _widgets;
 
@@ -39,7 +39,7 @@ public class MainScreen : MonoBehaviour
 
         _menu = root.Q<VisualElement>("menu");
         _canvasWidgetScene = root.Q<VisualElement>("canvas-widget-container");
-        _uiTookliWidgetScene = root.Q<VisualElement>("ui-toolkit-widget-container");
+        _uiTookitWidgetScene = root.Q<VisualElement>("ui-toolkit-widget-container");
 
         _anchorLabel = root.Q<Label>("anchor-label");
         _ualLabel = root.Q<Label>("ual-label");
@@ -60,12 +60,14 @@ public class MainScreen : MonoBehaviour
         _anchorLabel.RegisterCallback<ClickEvent>(evt =>
         {
             _isAnchorClicked = true;
+            _isUalClicked = false;
             _widgets.ForEach(x => x.style.translate = new StyleTranslate(new Translate(0, 0, 0)));
         });
 
         _ualLabel.RegisterCallback<ClickEvent>(evt =>
         {
             _isUalClicked = true;
+            _isAnchorClicked = false;
             _widgets.ForEach(x => x.style.translate = new StyleTranslate(new Translate(0, 0, 0)));
         });
 
@@ -81,7 +83,7 @@ public class MainScreen : MonoBehaviour
             }
         });
 
-        _uiTookliWidgetScene.RegisterCallback<ClickEvent>(evt =>
+        _uiTookitWidgetScene.RegisterCallback<ClickEvent>(evt =>
         {
             if (_isAnchorClicked)
             {

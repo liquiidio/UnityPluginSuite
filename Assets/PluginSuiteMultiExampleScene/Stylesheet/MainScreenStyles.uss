@@ -4,21 +4,27 @@
     --font-size-h1: 35px;
     --font-size-h2: 30px;
     --font-size-h3: 25px;
-    --background-img: url('project://database/Assets/WUG/Sprites/Background.jpeg');
-    -unity-font-definition: url('project://database/Assets/WUG/Fonts/Syncopate-Regular%20SDF.asset');
+    --background-img: url('project://database/Assets/PluginSuiteMultiExampleScene/Sprites/11%20HRRed%20Alert.jpg?fileID=2800000&guid=a761484c670d3ae4daec93e493521228&type=3#11 HRRed Alert');
+    -unity-font-definition: url('project://database/Assets/PluginSuiteMultiExampleScene/Fonts/Syncopate-Bold%20SDF.asset?fileID=11400000&guid=9eb08828c813e2646959c699f3ca1cf2&type=2#Syncopate-Bold SDF');
     color: var(--color-2);
 }
 
 .label-tag {
     transition-duration: 0s;
     transition-timing-function: ease;
+    -unity-font: url('project://database/Assets/PluginSuiteMultiExampleScene/Fonts/Syncopate-Regular.ttf?fileID=12800000&guid=c645c133fe43beb4ea9a563e7f422f1c&type=3#Syncopate-Regular');
+    -unity-font-style: bold;
+    font-size: 24px;
 }
 
 .label-tag:hover {
     transition-duration: 0.25s;
     transition-timing-function: ease-out-back;
     scale: 1.2 1.2;
-    color: rgba(255, 255, 255, 255);
+    color: rgb(255, 255, 255);
+    -unity-font: url('project://database/Assets/PluginSuiteMultiExampleScene/Fonts/Syncopate-Regular.ttf?fileID=12800000&guid=c645c133fe43beb4ea9a563e7f422f1c&type=3#Syncopate-Regular');
+    font-size: 26px;
+    -unity-font-style: bold;
 }
 
 .widget-container {
@@ -40,7 +46,7 @@
 
 #screen {
     flex-grow: 1;
-    background-image: url('project://database/Assets/SceneSwitching/Sprites/11%20HRRed%20Alert.jpg?fileID=2800000&guid=d1a61d19e9e70f24f98c981cace10f47&type=3#11 HRRed Alert');
+    background-image: url('project://database/Assets/PluginSuiteMultiExampleScene/Sprites/11%20HRRed%20Alert.jpg?fileID=2800000&guid=a761484c670d3ae4daec93e493521228&type=3#11 HRRed Alert');
     flex-direction: row;
 }
 
