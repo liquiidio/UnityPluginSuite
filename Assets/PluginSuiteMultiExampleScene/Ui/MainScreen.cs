@@ -108,11 +108,11 @@ public class MainScreen : MonoBehaviour
         {
             if (_isAnchorClicked)
             {
-                LoadScene("ExampleUiToolkitScene");
+                LoadScene("UiToolkitAnchorExampleScene");
             }
             else if (_isUalClicked)
             {
-                LoadScene("UiToolkitUALScene");
+                LoadScene("UiToolkitUALExampleScene");
             }
         });
     }

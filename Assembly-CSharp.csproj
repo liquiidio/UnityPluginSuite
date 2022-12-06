@@ -412,6 +412,7 @@
     <None Include="Assets\Packages\anchorlinktransportsharp\Examples\UiToolkit\Ui\LoginView.uxml" />
     <None Include="Assets\Packages\anchorlinktransportsharp\Packages\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\Packages\universalauthenticatorlibrary\Examples\UiToolkit\Stylesheet\UALUSSFile.uss" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\PluginSuiteMultiExampleScene\Stylesheet\MainScreenStyles.uss" />
