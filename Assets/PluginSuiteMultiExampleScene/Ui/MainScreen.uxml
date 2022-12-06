@@ -14,14 +14,14 @@
             <ui:VisualElement name="decorative-bar" />
         </ui:VisualElement>
         <ui:VisualElement name="content" style="flex-grow: 1; align-items: flex-end; justify-content: center;">
-            <ui:Label text="Example&#10;Scenes" display-tooltip-when-elided="true" name="header" style="-unity-font: none; -unity-font-definition: url(&apos;project://database/Assets/PluginSuiteMultiExampleScene/Fonts/Syncopate-Bold%20SDF.asset?fileID=11400000&amp;guid=9eb08828c813e2646959c699f3ca1cf2&amp;type=2#Syncopate-Bold SDF&apos;); position: relative; top: auto;" />
+            <ui:Label text="Example&#10;Scenes" display-tooltip-when-elided="true" name="header" class="header-label" style="-unity-font: none; -unity-font-definition: url(&apos;project://database/Assets/PluginSuiteMultiExampleScene/Fonts/Syncopate-Bold%20SDF.asset?fileID=11400000&amp;guid=9eb08828c813e2646959c699f3ca1cf2&amp;type=2#Syncopate-Bold SDF&apos;); position: relative; top: auto;" />
             <ui:VisualElement name="body">
                 <ui:VisualElement name="canvas-widget-container" class="widget-container">
-                    <ui:Label text="CANVAS SCENE" display-tooltip-when-elided="true" style="width: 100%; -unity-text-align: upper-center; -unity-font: url(&apos;project://database/Assets/SceneSwitching/Fonts/Syncopate-Regular.ttf?fileID=12800000&amp;guid=96227cad944714b469b8b3418dc07cf4&amp;type=3#Syncopate-Regular&apos;); -unity-font-style: bold; font-size: 20px; color: rgb(245, 245, 245);" />
+                    <ui:Label text="CANVAS SCENE" display-tooltip-when-elided="true" name="option" class="header-label" style="width: 100%; -unity-text-align: upper-center; -unity-font: url(&apos;project://database/Assets/SceneSwitching/Fonts/Syncopate-Regular.ttf?fileID=12800000&amp;guid=96227cad944714b469b8b3418dc07cf4&amp;type=3#Syncopate-Regular&apos;); -unity-font-style: bold; font-size: 20px; color: rgb(245, 245, 245);" />
                     <ui:VisualElement name="Image" />
                 </ui:VisualElement>
                 <ui:VisualElement name="ui-toolkit-widget-container" class="widget-container">
-                    <ui:Label text="UITOOLKIT SCENE" display-tooltip-when-elided="true" style="width: 100%; -unity-text-align: upper-center; -unity-font: url(&apos;project://database/Assets/SceneSwitching/Fonts/Syncopate-Regular.ttf?fileID=12800000&amp;guid=96227cad944714b469b8b3418dc07cf4&amp;type=3#Syncopate-Regular&apos;); -unity-font-style: bold; font-size: 20px; color: rgb(224, 224, 224);" />
+                    <ui:Label text="UITOOLKIT SCENE" display-tooltip-when-elided="true" name="option" class="header-label" style="width: 100%; -unity-text-align: upper-center; -unity-font: url(&apos;project://database/Assets/SceneSwitching/Fonts/Syncopate-Regular.ttf?fileID=12800000&amp;guid=96227cad944714b469b8b3418dc07cf4&amp;type=3#Syncopate-Regular&apos;); -unity-font-style: bold; font-size: 20px; color: rgb(224, 224, 224);" />
                     <ui:VisualElement name="Image" />
                 </ui:VisualElement>
             </ui:VisualElement>
