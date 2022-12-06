@@ -199,6 +199,10 @@
     <Compile Include="Assets\Packages\anchorlinksharp\AnchorLinkSharp\TransactOptions.cs" />
     <Compile Include="Assets\Packages\atomicmarketapiclient\AtomicMarketApiClient\Stats\CollectionDto.cs" />
     <Compile Include="Assets\Packages\atomicmarketapiclient\AtomicMarketApiClient\Pricing\PricesDto.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Assets\Packages\wombatunitywebgl\Examples\Ui\LoginView.cs" />
+>>>>>>> unity_ual
     <Compile Include="Assets\Packages\atomicassetsapiclient\AtomicAssetsApiClient\Accounts\AccountsApi.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\HyperionApiClient\Clients\ChainClient.cs" />
     <Compile Include="Assets\Packages\eossharp\EosSharp\EosSharp.Core\DataAttributes\AbiFieldTypeAttribute.cs" />
@@ -243,6 +247,10 @@
     <Compile Include="Assets\Packages\hyperionapiclient\HyperionApiClient\Models\Sort.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\HyperionApiClient\Clients\AccountsClient.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\HyperionApiClient\Responses\GetBlockResponse.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Assets\Packages\wombatunitywebgl\Examples\Ui\ScreenBase.cs" />
+>>>>>>> unity_ual
     <Compile Include="Assets\Packages\universalauthenticatorlibrary\Examples\UiToolkit\UALUiToolkitExample.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\HyperionApiClient\Models\Act.cs" />
     <Compile Include="Assets\Packages\atomicmarketapiclient\AtomicMarketApiClient\StatsDto.cs" />
@@ -255,6 +263,10 @@
     <Compile Include="Assets\Packages\hyperionapiclient\HyperionApiClient\Models\AuthSequence.cs" />
     <Compile Include="Assets\Packages\atomicassetsapiclient\AtomicAssetsApiClient\Assets\AssetDto.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\HyperionApiClient\Models\Proposal.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Assets\Packages\wombatunitywebgl\Examples\UiToolkitExample.cs" />
+>>>>>>> unity_ual
     <Compile Include="Assets\Packages\anchorlinktransportsharp\Src\Transports\UiToolkit\Ui\ScreenBase.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\HyperionApiClient\Models\BlockrootMerkle.cs" />
     <Compile Include="Assets\Packages\universalauthenticatorlibrary\Examples\ExampleUser.cs" />
@@ -285,6 +297,10 @@
     <Compile Include="Assets\Packages\anchorlinksharp\AnchorLinkSharp\LinkSession.cs" />
     <Compile Include="Assets\Packages\anchorlinksharp\AnchorLinkSharp\IdentityException.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\HyperionApiClient\Responses\GetMissedBlocksResponse.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Assets\Packages\wombatunitywebgl\Examples\Ui\MainView.cs" />
+>>>>>>> unity_ual
     <Compile Include="Assets\Packages\hyperionapiclient\HyperionApiClient\Clients\StatsClient.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\HyperionApiClient\Models\Account.cs" />
     <Compile Include="Assets\Packages\anchorlinksharp\AnchorLinkSharp\LinkSessionDataConverter.cs" />
@@ -367,10 +383,13 @@
     <Compile Include="Assets\Packages\hyperionapiclient\HyperionApiClient\Models\ServiceData.cs" />
     <Compile Include="Assets\Packages\atomicmarketapiclient\AtomicMarketApiClient\BuyOffers\BuyOffersDto.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\HyperionApiClient\Responses\GetDeltasResponse.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Packages\wombatunitywebgl\Examples\UiToolkitExample.cs" />
     <Compile Include="Assets\Packages\wombatunitywebgl\Examples\Ui\ScreenBase.cs" />
     <Compile Include="Assets\Packages\wombatunitywebgl\Examples\Ui\LoginView.cs" />
     <Compile Include="Assets\Packages\wombatunitywebgl\Examples\Ui\MainView.cs" />
+=======
+>>>>>>> unity_ual
     <Compile Include="Assets\PluginExampleScene\Ui\MainScreen.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -399,6 +418,10 @@
     <None Include="Assets\Packages\anchorlinktransportsharp\Examples\UiToolkit\Ui\MainView.uxml" />
     <None Include="Assets\Packages\wcwunitywebgl\Examples\Ui\MainView.uxml" />
     <None Include="Assets\Packages\anchorlinktransportsharp\Packages\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+<<<<<<< HEAD
+=======
+    <None Include="Assets\PluginExampleScene\Stylesheet\MainScreenStyles.uss" />
+>>>>>>> unity_ual
     <None Include="Assets\Packages\anchorlinktransportsharp\Src\Transports\UiToolkit\Ui\SigningTimerPanel.uxml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
@@ -426,6 +449,10 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\Packages\anchorlinktransportsharp\Examples\UiToolkit\Ui\LoginView.uxml" />
     <None Include="Assets\Packages\anchorlinktransportsharp\Packages\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+<<<<<<< HEAD
+=======
+    <None Include="Assets\Packages\universalauthenticatorlibrary\Examples\UiToolkit\Stylesheet\UALUSSFile.uss" />
+>>>>>>> unity_ual
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\Packages\universalauthenticatorlibrary\Src\UiToolkit\Ui\AuthenticatorButtonItem.uxml" />
     <None Include="Assets\Packages\anchorlinktransportsharp\Packages\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
@@ -438,12 +465,19 @@
     <None Include="Assets\Packages\anchorlinktransportsharp\Packages\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\Packages\anchorlinktransportsharp\Packages\ZXing\unity\zxing.unity.dll" />
     <None Include="Assets\Packages\anchorlinktransportsharp\Examples\UiToolkit\Stylesheet\AnchorUSSFile.uss" />
+<<<<<<< HEAD
     <None Include="Assets\PluginExampleScene\Ui\MainScreen.uxml" />
     <None Include="Assets\PluginExampleScene\Stylesheet\MainScreenStyles.uss" />
+=======
+>>>>>>> unity_ual
     <None Include="Assets\Packages\universalauthenticatorlibrary\Src\UiToolkit\Ui\AuthenticatorsPanel.uxml" />
     <None Include="Assets\Packages\anchorlinktransportsharp\Packages\TextMesh Pro\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+<<<<<<< HEAD
+=======
+    <None Include="Assets\PluginExampleScene\Ui\MainScreen.uxml" />
+>>>>>>> unity_ual
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
