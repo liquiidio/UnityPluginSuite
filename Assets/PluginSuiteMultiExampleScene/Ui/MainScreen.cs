@@ -12,8 +12,8 @@ public class MainScreen : MonoBehaviour
      * Child-Controls
      */
     private VisualElement _menu;
-    private VisualElement _canvasWidgetScene;
     private VisualElement _maskBox;
+    private VisualElement _canvasWidgetScene;
     private VisualElement _uiTookitWidgetScene;
     private VisualElement[] _mainMenuOptions;
     private List<VisualElement> _widgets;
@@ -26,13 +26,13 @@ public class MainScreen : MonoBehaviour
     //private Label _anchorLabel;
 
     private Button _closeButton;
+
     /*
      * Fields/Properties
      */
     private const string POPUP_ANIMATION = "pop-animation-hide";
-    private int _mainPopupIndex = -1;
-
     private string _currentSceneLoaded = "";
+    private int _mainPopupIndex = -1;
 
     private bool _isAnchorClicked;
     private bool _isUalClicked;
@@ -56,7 +56,7 @@ public class MainScreen : MonoBehaviour
 
         _closeButton = root.Q<Button>("close-view-button");
 
-        _menu.RegisterCallback<TransitionEndEvent>(Menu_TransitionEnd);
+        _menu.RegisterCallback<TransitionEndEvent>(MenuTransitionEnd);
 
         StartCoroutine(PopupAnimation());
         BindButtons();
@@ -121,7 +121,7 @@ public class MainScreen : MonoBehaviour
 
     #region Others
 
-    private void Menu_TransitionEnd(TransitionEndEvent evt)
+    private void MenuTransitionEnd(TransitionEndEvent evt)
     {
         if (!evt.stylePropertyNames.Contains("opacity")) { return; }
 
