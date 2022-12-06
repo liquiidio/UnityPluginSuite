@@ -34,7 +34,7 @@
     margin: 20px;
     translate: 0 254px;
     transition-duration: 0.75s;
-    transition-delay: 0.75s;
+    transition-delay: 0s;
     transition-timing-function: ease-out-back;
 }
 
@@ -42,6 +42,9 @@
     scale: 1.2 1.2;
     transition-duration: 0.25s;
     transition-timing-function: ease-out-back;
+}
+
+.header-label {
 }
 
 #screen {
@@ -134,7 +137,4 @@
 
 .selector-filled {
     background-color: var(--color-1);
-}
-
-.header-label {
 }
