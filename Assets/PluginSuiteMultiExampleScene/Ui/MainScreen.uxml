@@ -1,0 +1,34 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/PluginSuiteMultiExampleScene/Stylesheet/MainScreenStyles.uss?fileID=7433441132597879392&amp;guid=bb3ae460d5f563e469032fa8b2a49c9f&amp;type=3#MainScreenStyles" />
+    <ui:VisualElement name="screen" style="display: flex; visibility: visible;">
+        <ui:VisualElement name="menu" class="pop-animation-hide" style="transform-origin: left; transition-property: all;">
+            <ui:VisualElement name="navigation" style="flex-grow: 1; opacity: 1;">
+                <ui:VisualElement name="main-nav">
+                    <ui:Label text="ANCHOR" display-tooltip-when-elided="true" name="anchor-label" focusable="false" class="pop-animation-hide label-tag" style="opacity: 1; -unity-font: url(&apos;project://database/Assets/SceneSwitching/Fonts/Syncopate-Regular.ttf?fileID=12800000&amp;guid=96227cad944714b469b8b3418dc07cf4&amp;type=3#Syncopate-Regular&apos;); transition-duration: 0ms; transition-timing-function: ease;" />
+                    <ui:Label text="UAL" display-tooltip-when-elided="true" name="ual-label" class="pop-animation-hide label-tag" style="opacity: 1; -unity-font: url(&apos;project://database/Assets/SceneSwitching/Fonts/Syncopate-Regular.ttf?fileID=12800000&amp;guid=96227cad944714b469b8b3418dc07cf4&amp;type=3#Syncopate-Regular&apos;);" />
+                    <ui:Label text="ATOMIC ASSETS" display-tooltip-when-elided="true" name="atomic-asset-label" class="pop-animation-hide label-tag" style="-unity-font: url(&apos;project://database/Assets/SceneSwitching/Fonts/Syncopate-Regular.ttf?fileID=12800000&amp;guid=96227cad944714b469b8b3418dc07cf4&amp;type=3#Syncopate-Regular&apos;); opacity: 1;" />
+                    <ui:Label text="ATOMIC MARKET" display-tooltip-when-elided="true" name="atomic-market-label" class="pop-animation-hide label-tag" style="-unity-font: url(&apos;project://database/Assets/SceneSwitching/Fonts/Syncopate-Regular.ttf?fileID=12800000&amp;guid=96227cad944714b469b8b3418dc07cf4&amp;type=3#Syncopate-Regular&apos;); opacity: 1;" />
+                    <ui:Label text="HYPERION" display-tooltip-when-elided="true" name="hyperion-label" class="pop-animation-hide label-tag" style="-unity-font: url(&apos;project://database/Assets/SceneSwitching/Fonts/Syncopate-Regular.ttf?fileID=12800000&amp;guid=96227cad944714b469b8b3418dc07cf4&amp;type=3#Syncopate-Regular&apos;); opacity: 1;" />
+                    <ui:Label text="QUIT" display-tooltip-when-elided="true" name="quit-label" class="pop-animation-hide label-tag" style="-unity-font: url(&apos;flex&apos;); opacity: 1;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="decorative-bar" />
+        </ui:VisualElement>
+        <ui:VisualElement name="content" style="flex-grow: 1; align-items: flex-end; justify-content: center;">
+            <ui:Label text="Example&#10;Scenes" display-tooltip-when-elided="true" name="header" class="header-label" style="-unity-font: none; -unity-font-definition: url(&apos;project://database/Assets/PluginSuiteMultiExampleScene/Fonts/Syncopate-Bold%20SDF.asset?fileID=11400000&amp;guid=9eb08828c813e2646959c699f3ca1cf2&amp;type=2#Syncopate-Bold SDF&apos;); position: relative; top: auto;" />
+            <ui:VisualElement name="body">
+                <ui:VisualElement name="canvas-widget-container" class="widget-container">
+                    <ui:Label text="CANVAS SCENE" display-tooltip-when-elided="true" name="option" class="header-label" style="width: 100%; -unity-text-align: upper-center; -unity-font: url(&apos;project://database/Assets/SceneSwitching/Fonts/Syncopate-Regular.ttf?fileID=12800000&amp;guid=96227cad944714b469b8b3418dc07cf4&amp;type=3#Syncopate-Regular&apos;); -unity-font-style: bold; font-size: 20px; color: rgb(245, 245, 245);" />
+                    <ui:VisualElement name="Image" />
+                </ui:VisualElement>
+                <ui:VisualElement name="ui-toolkit-widget-container" class="widget-container">
+                    <ui:Label text="UITOOLKIT SCENE" display-tooltip-when-elided="true" name="option" class="header-label" style="width: 100%; -unity-text-align: upper-center; -unity-font: url(&apos;project://database/Assets/SceneSwitching/Fonts/Syncopate-Regular.ttf?fileID=12800000&amp;guid=96227cad944714b469b8b3418dc07cf4&amp;type=3#Syncopate-Regular&apos;); -unity-font-style: bold; font-size: 20px; color: rgb(224, 224, 224);" />
+                    <ui:VisualElement name="Image" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="mask-box" style="position: absolute; width: 100%; height: 100%; background-color: rgba(94, 91, 91, 0.62); align-items: auto;">
+            <ui:Button display-tooltip-when-elided="true" name="close-view-button" text="Close" class="label-tag" style="height: 40px; width: 106px; position: relative; -unity-font-style: bold; font-size: 15px; background-image: none; background-color: rgb(88, 88, 88); border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); right: 10px; top: auto; border-top-left-radius: 6px; border-bottom-left-radius: 6px; border-top-right-radius: 6px; border-bottom-right-radius: 6px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Packages/universalauthenticatorlibrary/Examples/Canvas/CanvasScene.unity
+    guid: 9a7909b7c4c05874cb359624038e2c9d
+  - enabled: 1
+    path: Assets/Packages/universalauthenticatorlibrary/Examples/UiToolkit/UiToolkitUALExampleScene.unity
+    guid: b1d9ce7bf04465048a2ee87c7857b90b
+  - enabled: 1
+    path: Assets/Packages/anchorlinktransportsharp/Examples/Canvas/ExampleCanvasScene.unity
+    guid: 93436d97ee043924ebb50a190563bc55
+  - enabled: 1
+    path: Assets/Packages/anchorlinktransportsharp/Examples/UiToolkit/UiToolkitAnchorExampleScene.unity
+    guid: e7fb44befa3d1ec48b4658f3235dd29e
   m_configObjects: {}
