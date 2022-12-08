@@ -20,10 +20,10 @@ public class MainScreen : MonoBehaviour
 
     private Label _anchorLabel;
     private Label _ualLabel;
-
-    //private Label _anchorLabel;
-    //private Label _anchorLabel;
-    //private Label _anchorLabel;
+    private Label _atomicAssetLabel;
+    private Label _atomicMarketLabel;
+    private Label _hyperionLabel;
+    private Label _quitLabel;
 
     private Button _closeButton;
 
@@ -53,6 +53,10 @@ public class MainScreen : MonoBehaviour
 
         _anchorLabel = root.Q<Label>("anchor-label");
         _ualLabel = root.Q<Label>("ual-label");
+        _atomicAssetLabel = root.Q<Label>("atomic-asset-label");
+        _atomicMarketLabel = root.Q<Label>("atomic-market-label");
+        _hyperionLabel = root.Q<Label>("hyperion-label");
+        _quitLabel = root.Q<Label>("quit-label");
 
         _closeButton = root.Q<Button>("close-view-button");
 
@@ -90,6 +94,26 @@ public class MainScreen : MonoBehaviour
             _isUalClicked = true;
             _isAnchorClicked = false;
             _widgets.ForEach(x => x.style.translate = new StyleTranslate(new Translate(0, 0, 0)));
+        });
+
+        _atomicAssetLabel.RegisterCallback<ClickEvent>(evt =>
+        {
+
+        });
+
+        _atomicMarketLabel.RegisterCallback<ClickEvent>(evt =>
+        {
+
+        });
+
+        _hyperionLabel.RegisterCallback<ClickEvent>(evt =>
+        {
+
+        });
+
+        _quitLabel.RegisterCallback<ClickEvent>(evt =>
+        {
+
         });
 
         _canvasWidgetScene.RegisterCallback<ClickEvent>(evt =>
@@ -135,7 +159,7 @@ public class MainScreen : MonoBehaviour
 
     private IEnumerator PopupAnimation()
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1.0f);
 
         _menu.ToggleInClassList(POPUP_ANIMATION);
     }
