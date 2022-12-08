@@ -303,7 +303,6 @@
     <Compile Include="Assets\Packages\hyperionapiclient\HyperionApiClient\Models\Features.cs" />
     <Compile Include="Assets\Packages\atomicmarketapiclient\AtomicMarketApiClient\Sales\SalesApi.cs" />
     <Compile Include="Assets\Packages\atomicassetsapiclient\AtomicAssetsApiClient\Offers\OffersDto.cs" />
-    <Compile Include="Assets\Packages\wombatunitywebgl\Examples\WombatSampleScript.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\HyperionApiClient\Models\Percentiles.cs" />
     <Compile Include="Assets\Packages\atomicmarketapiclient\AtomicMarketApiClient\Auctions\AuctionsApi.cs" />
     <Compile Include="Assets\Packages\eossharp\EosSharp\EosSharp.Core\Providers\CombinedSignersProvider.cs" />
@@ -369,6 +368,10 @@
     <Compile Include="Assets\Packages\wcwunitywebgl\Examples\Ui\MainView.cs" />
     <Compile Include="Assets\Packages\wcwunitywebgl\Examples\Ui\LoginView.cs" />
     <Compile Include="Assets\Packages\wcwunitywebgl\Examples\Ui\ScreenBase.cs" />
+    <Compile Include="Assets\Packages\wombatunitywebgl\Examples\UiToolkitExample.cs" />
+    <Compile Include="Assets\Packages\wombatunitywebgl\Examples\Ui\ScreenBase.cs" />
+    <Compile Include="Assets\Packages\wombatunitywebgl\Examples\Ui\LoginView.cs" />
+    <Compile Include="Assets\Packages\wombatunitywebgl\Examples\Ui\MainView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Packages\anchorlinktransportsharp\Src\Transports\UiToolkit\Ui\FailurePanel.uxml" />
@@ -387,6 +390,7 @@
     <None Include="Assets\Packages\anchorlinktransportsharp\Src\Transports\UiToolkit\Ui\UAL\Stylesheet\UAL.uss" />
     <None Include="Assets\Packages\anchorlinktransportsharp\Src\Transports\UiToolkit\Ui\UAL\Ui\UAL.uxml" />
     <None Include="Assets\Packages\wcwunitywebgl\Examples\Ui\LoginView.uxml" />
+    <None Include="Assets\Packages\wombatunitywebgl\Examples\Ui\LoginView.uxml" />
     <None Include="Assets\Packages\anchorlinktransportsharp\Packages\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\Packages\anchorlinktransportsharp\Packages\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
@@ -400,8 +404,10 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\Packages\anchorlinktransportsharp\Src\Transports\UiToolkit\Ui\SigningTimerPanel.uxml" />
     <None Include="Assets\Packages\universalauthenticatorlibrary\Src\UiToolkit\StyleSheets\UALStyle.uss" />
+    <None Include="Assets\Packages\wombatunitywebgl\Examples\Stylesheet\AnchorUSSFile.uss" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\Packages\anchorlinktransportsharp\Packages\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\Packages\wombatunitywebgl\Examples\Ui\MainView.uxml" />
     <None Include="Assets\Packages\anchorlinktransportsharp\Packages\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\Packages\anchorlinktransportsharp\Packages\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\Packages\anchorlinktransportsharp\Packages\TextMesh Pro\Shaders\TMP_SDF.shader" />
@@ -424,7 +430,6 @@
     <None Include="Assets\PluginSuiteMultiExampleScene\Ui\MainScreen.uxml" />
     <None Include="Assets\Packages\universalauthenticatorlibrary\Src\UiToolkit\Ui\AuthenticatorButtonItem.uxml" />
     <None Include="Assets\Packages\anchorlinktransportsharp\Packages\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\Packages\wombatunitywebgl\Examples\WombatSampleScreen.uxml" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\Packages\anchorlinktransportsharp\Packages\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\Packages\wcwunitywebgl\Examples\Stylesheet\AnchorUSSFile.uss" />
