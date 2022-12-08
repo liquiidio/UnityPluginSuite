@@ -241,7 +241,6 @@
     <Compile Include="Assets\Packages\hyperionapiclient\HyperionApiClient\Clients\AccountsClient.cs" />
     <Compile Include="Assets\Packages\atomicmarketapiclient\AtomicMarketApiClient\State.cs" />
     <Compile Include="Assets\Packages\eossharp\EosSharp\EosSharp.Core\Api\v1\EosApi.cs" />
-    <Compile Include="Assets\Packages\wcwunitywebgl\Examples\WaxCloudWalletSampleScript.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\HyperionApiClient\Models\Transaction3.cs" />
     <Compile Include="Assets\Packages\anchorlinksharp\AnchorLinkSharp\ChannelInfo.cs" />
     <Compile Include="Assets\Packages\anchorlinktransportsharp\Src\StorageProviders\JsonLocalStorage.cs" />
@@ -366,6 +365,10 @@
     <Compile Include="Assets\Packages\universalauthenticatorlibrary\Src\UiToolkit\Ui\ScreenBase.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\HyperionApiClient\Clients\StatusClient.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\HyperionApiClient\Models\Specification.cs" />
+    <Compile Include="Assets\Packages\wcwunitywebgl\Examples\UiToolkitExample.cs" />
+    <Compile Include="Assets\Packages\wcwunitywebgl\Examples\Ui\MainView.cs" />
+    <Compile Include="Assets\Packages\wcwunitywebgl\Examples\Ui\LoginView.cs" />
+    <Compile Include="Assets\Packages\wcwunitywebgl\Examples\Ui\ScreenBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Packages\anchorlinktransportsharp\Src\Transports\UiToolkit\Ui\FailurePanel.uxml" />
@@ -383,6 +386,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\Packages\anchorlinktransportsharp\Src\Transports\UiToolkit\Ui\UAL\Stylesheet\UAL.uss" />
     <None Include="Assets\Packages\anchorlinktransportsharp\Src\Transports\UiToolkit\Ui\UAL\Ui\UAL.uxml" />
+    <None Include="Assets\Packages\wcwunitywebgl\Examples\Ui\LoginView.uxml" />
     <None Include="Assets\Packages\anchorlinktransportsharp\Packages\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\Packages\anchorlinktransportsharp\Packages\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
@@ -390,6 +394,7 @@
     <None Include="Assets\Packages\anchorlinktransportsharp\Src\Transports\UiToolkit\Ui\LoadingPanel.uxml" />
     <None Include="Assets\Packages\anchorlinktransportsharp\Examples\UiToolkit\Ui\MainView.uxml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\Packages\wcwunitywebgl\Examples\Ui\MainView.uxml" />
     <None Include="Assets\Packages\anchorlinktransportsharp\Packages\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\Packages\Cryptography.ECDSA.dll" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
@@ -417,12 +422,12 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\PluginSuiteMultiExampleScene\Stylesheet\MainScreenStyles.uss" />
     <None Include="Assets\PluginSuiteMultiExampleScene\Ui\MainScreen.uxml" />
-    <None Include="Assets\Packages\wcwunitywebgl\Examples\WaxCloudWalletSampleScreen.uxml" />
     <None Include="Assets\Packages\universalauthenticatorlibrary\Src\UiToolkit\Ui\AuthenticatorButtonItem.uxml" />
     <None Include="Assets\Packages\anchorlinktransportsharp\Packages\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\Packages\wombatunitywebgl\Examples\WombatSampleScreen.uxml" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\Packages\anchorlinktransportsharp\Packages\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\Packages\wcwunitywebgl\Examples\Stylesheet\AnchorUSSFile.uss" />
     <None Include="Assets\Packages\anchorlinktransportsharp\Packages\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\Packages\anchorlinktransportsharp\Packages\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
