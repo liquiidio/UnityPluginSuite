@@ -4,9 +4,10 @@
     --font-size-h1: 35px;
     --font-size-h2: 30px;
     --font-size-h3: 25px;
-    --background-img: url('project://database/Assets/PluginSuiteMultiExampleScene/Sprites/11%20HRRed%20Alert.jpg?fileID=2800000&guid=a761484c670d3ae4daec93e493521228&type=3#11 HRRed Alert');
+    --background-img: url('project://database/Assets/PluginSuiteMultiExampleScene/Fonts/Syncopate-Bold.ttf?fileID=12800000&guid=9d54ae6d0947e0344b554df63e7becce&type=3#Syncopate-Bold');
     -unity-font: url('project://database/Assets/Packages/anchorlinktransportsharp/Examples/UiToolkit/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&guid=1cd74a0089e942a4ba2129d8eb6be746&type=3#NotInter-Regular');
     color: var(--color-2);
+    -unity-font-definition: url('project://database/Assets/PluginSuiteMultiExampleScene/Fonts/Syncopate-Bold%20SDF.asset?fileID=11400000&guid=9eb08828c813e2646959c699f3ca1cf2&type=2#Syncopate-Bold SDF');
 }
 
 .label-tag {
