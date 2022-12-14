@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using System.Linq;
 using System;
+using Assets.Packages.AnchorLinkTransportSharp.Src.Transports.UiToolkit.Ui;
 using UnityEngine.SceneManagement;
 
 public class MainScreen : MonoBehaviour
@@ -25,17 +26,16 @@ public class MainScreen : MonoBehaviour
     private Label _hyperionLabel;
     private Label _quitLabel;
 
-    private Button _closeButton;
+    private Button _closeViewButton;
 
     /*
      * Fields/Properties
      */
-    private const string POPUP_ANIMATION = "pop-animation-hide";
+    private const string PopUpAnimation = "pop-animation-hide";
+
     private string _currentSceneLoaded = "";
     private int _mainPopupIndex = -1;
-
-    private bool _isAnchorClicked;
-    private bool _isUalClicked;
+    private string _clickedButtonName = string.Empty;
 
 
     void Start()
@@ -58,85 +58,97 @@ public class MainScreen : MonoBehaviour
         _hyperionLabel = root.Q<Label>("hyperion-label");
         _quitLabel = root.Q<Label>("quit-label");
 
-        _closeButton = root.Q<Button>("close-view-button");
+        _closeViewButton = root.Q<Button>("close-view-button");
 
         _menu.RegisterCallback<TransitionEndEvent>(MenuTransitionEnd);
 
-        StartCoroutine(PopupAnimation());
+        StartCoroutine(PopupMenuAnimation());
         BindButtons();
-
     }
 
     #region Button Binding
 
     private void BindButtons()
     {
-        _closeButton.clickable.clicked += () =>
+        _closeViewButton.clickable.clicked += () =>
         {
             if (_currentSceneLoaded != "")
             {
                 SceneManager.UnloadSceneAsync(_currentSceneLoaded);
                 _currentSceneLoaded = "";
 
-                _maskBox.style.visibility = Visibility.Hidden;
+                _maskBox.Hide();
+
+                _widgets.ForEach(x => x.style.translate = new StyleTranslate(new Translate(0, 254, 0)));
             }
         };
 
         _anchorLabel.RegisterCallback<ClickEvent>(evt =>
         {
-            _isAnchorClicked = true;
-            _isUalClicked = false;
+            _clickedButtonName = _anchorLabel.text;
+
             _widgets.ForEach(x => x.style.translate = new StyleTranslate(new Translate(0, 0, 0)));
         });
 
         _ualLabel.RegisterCallback<ClickEvent>(evt =>
         {
-            _isUalClicked = true;
-            _isAnchorClicked = false;
+            _clickedButtonName = _ualLabel.text;
+
             _widgets.ForEach(x => x.style.translate = new StyleTranslate(new Translate(0, 0, 0)));
         });
 
         _atomicAssetLabel.RegisterCallback<ClickEvent>(evt =>
         {
-
+            LoadScene("AtomicAssetsExampleScene");
         });
 
         _atomicMarketLabel.RegisterCallback<ClickEvent>(evt =>
         {
-
+            LoadScene("AtomicMarketExampleScene");
         });
 
         _hyperionLabel.RegisterCallback<ClickEvent>(evt =>
         {
-
+            LoadScene("HyperionExampleScene");
         });
 
         _quitLabel.RegisterCallback<ClickEvent>(evt =>
         {
-
+            Application.Quit();
         });
 
         _canvasWidgetScene.RegisterCallback<ClickEvent>(evt =>
         {
-            if (_isAnchorClicked)
+            switch (_clickedButtonName)
             {
-                LoadScene("ExampleCanvasScene");
-            }
-            else if (_isUalClicked)
-            {
-                LoadScene("CanvasScene");
+                case "ANCHOR":
+                    LoadScene("ExampleCanvasScene");
+                    break;
+                case "UAL":
+                    LoadScene("CanvasScene");
+                    break;
             }
         });
 
         _uiTookitWidgetScene.RegisterCallback<ClickEvent>(evt =>
         {
-            if (_isAnchorClicked)
+            switch (_clickedButtonName)
             {
-                LoadScene("UiToolkitAnchorExampleScene");
-            }
-            else if (_isUalClicked)
-            {
-                LoadScene("UiToolkitUALExampleScene");
+                case "ANCHOR":
+                    LoadScene("UiToolkitAnchorExampleScene");
+                    break;
+                case "UAL":
+                    LoadScene("UiToolkitUALExampleScene");
+                    break;
+                case "ATOMIC ASSETS":
+                    LoadScene("AtomicAssetsExampleScene");
+                    break;
+                case "ATOMIC MARKET":
+                    LoadScene("AtomicMarketExampleScene");
+                    break;
+                case "HYPERION":
+                    LoadScene("HyperionExampleScene");
+                    break;
             }
         });
     }
@@ -153,20 +165,20 @@ public class MainScreen : MonoBehaviour
         {
             _mainPopupIndex++;
 
-            _mainMenuOptions[_mainPopupIndex].ToggleInClassList(POPUP_ANIMATION);
+            _mainMenuOptions[_mainPopupIndex].ToggleInClassList(PopUpAnimation);
         }
     }
 
-    private IEnumerator PopupAnimation()
+    private IEnumerator PopupMenuAnimation()
     {
         yield return new WaitForSeconds(1.0f);
 
-        _menu.ToggleInClassList(POPUP_ANIMATION);
+        _menu.ToggleInClassList(PopUpAnimation);
     }
 
     private void LoadScene(string targetScene)
     {
-        _maskBox.style.visibility = Visibility.Visible;
+        _maskBox.Show();
         _currentSceneLoaded = targetScene;
         SceneManager.LoadScene(targetScene, LoadSceneMode.Additive);
     }

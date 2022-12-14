@@ -15,6 +15,15 @@ EditorBuildSettings:
     path: Assets/Packages/anchorlinktransportsharp/Examples/Canvas/ExampleCanvasScene.unity
     guid: 93436d97ee043924ebb50a190563bc55
   - enabled: 1
-    path: Assets/Packages/anchorlinktransportsharp/Examples/UiToolkit/ExampleUiToolkitScene.unity
+    path: Assets/Packages/anchorlinktransportsharp/Examples/UiToolkit/UiToolkitAnchorExampleScene.unity
     guid: e7fb44befa3d1ec48b4658f3235dd29e
+  - enabled: 1
+    path: Assets/Packages/atomicassetsapiclient/Examples/UiToolkit/AtomicAssetsExampleScene.unity
+    guid: da2d7aed1fa6e11489c5e18e50c69747
+  - enabled: 1
+    path: Assets/Packages/hyperionapiclient/Examples/UiToolkit/HyperionExampleScene.unity
+    guid: 2fb37065790df4c459f90d219b1e113f
+  - enabled: 1
+    path: Assets/Packages/atomicmarketapiclient/Examples/UiToolkit/AtomicMarketExampleScene.unity
+    guid: 0512a5bacc30a5f4d864ccfa1a4d2ccf
   m_configObjects: {}
