@@ -60,7 +60,7 @@ public class MainScreen : MonoBehaviour
 
         _closeViewButton = root.Q<Button>("close-view-button");
 
-        _menu.RegisterCallback<TransitionEndEvent>(MenuTransitionEnd);
+        //_menu.RegisterCallback<TransitionEndEvent>(MenuTransitionEnd);
 
         StartCoroutine(PopupMenuAnimation());
         BindButtons();
@@ -157,17 +157,17 @@ public class MainScreen : MonoBehaviour
 
     #region Others
 
-    private void MenuTransitionEnd(TransitionEndEvent evt)
-    {
-        if (!evt.stylePropertyNames.Contains("opacity")) { return; }
+    //private void MenuTransitionEnd(TransitionEndEvent evt)
+    //{
+    //    if (!evt.stylePropertyNames.Contains("opacity")) { return; }
 
-        if (_mainPopupIndex < _mainMenuOptions.Length - 1)
-        {
-            _mainPopupIndex++;
+    //    if (_mainPopupIndex < _mainMenuOptions.Length - 1)
+    //    {
+    //        _mainPopupIndex++;
 
-            _mainMenuOptions[_mainPopupIndex].ToggleInClassList(PopUpAnimation);
-        }
-    }
+    //        _mainMenuOptions[_mainPopupIndex].ToggleInClassList(PopUpAnimation);
+    //    }
+    //}
 
     private IEnumerator PopupMenuAnimation()
     {
