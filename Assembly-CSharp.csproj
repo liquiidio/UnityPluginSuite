@@ -53,16 +53,18 @@
     <UnityVersion>2021.3.11f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Assets\Packages\anchorlinksharp\eosiosigningrequestsharp\Base64EncodingUtility.cs" />
+=======
+>>>>>>> 2d6b5ff0c507989655a37138b777b6db08113e31
     <Compile Include="Assets\Packages\atomicmarketapiclient\Src\AtomicMarketApiClient.Core\Transfers\TransfersUriParameterBuilder.cs" />
     <Compile Include="Assets\Packages\universalauthenticatorlibrary\Src\UAL.cs" />
     <Compile Include="Assets\Packages\wombatunitywebgl\Src\WombatPlugin.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Responses\GetMissedBlocksResponse.cs" />
     <Compile Include="Assets\Packages\anchorlinksharp\AnchorLinkSharp\LinkChannelSessionData.cs" />
-    <Compile Include="Assets\Packages\anchorlinksharp\eosiosigningrequestsharp\SigningRequest.cs" />
     <Compile Include="Assets\Packages\anchorlinksharp\AnchorLinkSharp\SealedMessage.cs" />
     <Compile Include="Assets\Packages\atomicassetsapiclient\Src\AtomicAssetsApiClient\Offers\OfferDto.cs" />
     <Compile Include="Assets\Packages\anchorlinksharp\anchorlinktransportsharp\Src\Transports\UiToolkit\Ui\SigningTimerPanel.cs" />
@@ -97,6 +99,10 @@
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\IHttpClient.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Models\ActivatedProtocolFeature.cs" />
     <Compile Include="Assets\Packages\atomicmarketapiclient\Src\AtomicMarketApiClient.Core\Auctions\AuctionsDto.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Assets\Packages\anchorlinksharp\eosiosigningrequestsharp\SigningRequest.cs" />
+>>>>>>> 2d6b5ff0c507989655a37138b777b6db08113e31
     <Compile Include="Assets\Packages\atomicmarketapiclient\Src\AtomicMarketApiClient.Core\Transfers\TransfersDto.cs" />
     <Compile Include="Assets\Packages\atomicassetsapiclient\Src\AtomicAssetsApiClient\SortStrategy.cs" />
     <Compile Include="Assets\Packages\wcwunitywebgl\Src\WaxCloudWalletPlugin.cs" />
@@ -143,6 +149,10 @@
     <Compile Include="Assets\Packages\atomicmarketapiclient\Src\AtomicMarketApiClient.Core\IUriParameterBuilder.cs" />
     <Compile Include="Assets\Packages\atomicmarketapiclient\Src\AtomicMarketApiClient.Core\IHttpHandler.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Clients\SystemClient.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Assets\Packages\anchorlinksharp\eosiosigningrequestsharp\SigningRequestAbi.cs" />
+>>>>>>> 2d6b5ff0c507989655a37138b777b6db08113e31
     <Compile Include="Assets\Packages\atomicmarketapiclient\Src\AtomicMarketApiClient.Core\MarketPlaces\MarketplaceDto.cs" />
     <Compile Include="Assets\Packages\atomicmarketapiclient\Examples\UiToolkit\Ui\AtomicMarketPanel.cs" />
     <Compile Include="Assets\Packages\atomicmarketapiclient\Src\AtomicMarketApiClient.Core\BuyOffers\BuyOffersApiBase.cs" />
@@ -184,6 +194,10 @@
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Models\Net.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Models\Abi.cs" />
     <Compile Include="Assets\Packages\atomicmarketapiclient\Src\AtomicMarketApiClient.Core\Pricing\TemplatesDto.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Assets\Packages\anchorlinksharp\eosiosigningrequestsharp\Base64EncodingUtility.cs" />
+>>>>>>> 2d6b5ff0c507989655a37138b777b6db08113e31
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Models\StdDeviationBounds.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Models\SubjectiveCpuBillLimit.cs" />
     <Compile Include="Assets\Packages\anchorlinksharp\AnchorLinkSharp\LinkCreate.cs" />
@@ -215,7 +229,10 @@
     <Compile Include="Assets\Packages\anchorlinksharp\AnchorLinkSharp\LinkAbiData.cs" />
     <Compile Include="Assets\Packages\anchorlinksharp\anchorlinktransportsharp\Src\Transports\UiToolkit\Ui\QrCodePanel.cs" />
     <Compile Include="Assets\Packages\atomicassetsapiclient\Src\AtomicAssetsApiClient\AtomicAssetsApiFactory.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Packages\anchorlinksharp\eosiosigningrequestsharp\SigningRequestAbi.cs" />
+=======
+>>>>>>> 2d6b5ff0c507989655a37138b777b6db08113e31
     <Compile Include="Assets\Packages\atomicmarketapiclient\Src\AtomicMarketApiClient.Core\Sales\SalesUriParameterBuilder.cs" />
     <Compile Include="Assets\Packages\atomicassetsapiclient\Src\AtomicAssetsApiClient\Assets\AssetDto.cs" />
     <Compile Include="Assets\Packages\anchorlinksharp\anchorlinktransportsharp\Examples\UiToolkit\Ui\LoginView.cs" />
@@ -237,6 +254,10 @@
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Models\ServiceData.cs" />
     <Compile Include="Assets\Packages\atomicmarketapiclient\Src\AtomicMarketApiClient.Core\Stats\SchemaDto.cs" />
     <Compile Include="Assets\Packages\atomicmarketapiclient\Src\AtomicMarketApiClient.Unity3D\Config\ConfigApi.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Assets\Packages\anchorlinksharp\eosiosigningrequestsharp\Abi.cs" />
+>>>>>>> 2d6b5ff0c507989655a37138b777b6db08113e31
     <Compile Include="Assets\Packages\anchorlinksharp\AnchorLinkSharp\LinkConstants.cs" />
     <Compile Include="Assets\Packages\anchorlinksharp\anchorlinktransportsharp\Src\NetZlibProvider.cs" />
     <Compile Include="Assets\Packages\atomicmarketapiclient\Src\AtomicMarketApiClient.Core\Config\ConfigDto.cs" />
@@ -371,7 +392,10 @@
     <Compile Include="Assets\Packages\eossharp\EosSharp\EosSharp.Unity3D\Eos.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Models\Transaction.cs" />
     <Compile Include="Assets\Packages\anchorlinksharp\AnchorLinkSharp\LinkChannelSession.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Packages\anchorlinksharp\eosiosigningrequestsharp\Abi.cs" />
+=======
+>>>>>>> 2d6b5ff0c507989655a37138b777b6db08113e31
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Responses\GetScheduleResponse.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Models\AccountRamDelta.cs" />
     <Compile Include="Assets\Packages\atomicmarketapiclient\Src\AtomicMarketApiClient.Core\Pricing\PricesDto.cs" />
@@ -386,9 +410,14 @@
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Models\ActivatedProtocolFeatures.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Responses\GetTransactionResponse.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Models\Action6.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Packages\universalauthenticatorlibrary\Src\UiToolkit\Ui\Utils.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Clients\ChainClient.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Responses\GetProposalsResponse.cs" />
+=======
+    <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Responses\GetProposalsResponse.cs" />
+    <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Clients\ChainClient.cs" />
+>>>>>>> 2d6b5ff0c507989655a37138b777b6db08113e31
     <Compile Include="Assets\Packages\anchorlinksharp\AnchorLinkSharp\CancelException.cs" />
     <Compile Include="Assets\Packages\atomicassetsapiclient\Src\AtomicAssetsApiClient\Burns\BurnsApi.cs" />
     <Compile Include="Assets\Packages\atomicmarketapiclient\Src\AtomicMarketApiClient\Transfers\TransfersApi.cs" />
@@ -747,12 +776,6 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.11f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.11f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Android.Types">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.11f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
@@ -1129,6 +1152,7 @@
     <Reference Include="endel.nativewebsocket">
       <HintPath>Library\ScriptAssemblies\endel.nativewebsocket.dll</HintPath>
     </Reference>
+<<<<<<< HEAD
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
@@ -1147,20 +1171,54 @@
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
+=======
+>>>>>>> 2d6b5ff0c507989655a37138b777b6db08113e31
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
+<<<<<<< HEAD
     <Reference Include="Unity.SysrootPackage.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.SysrootPackage.Editor.dll</HintPath>
     </Reference>
+=======
+>>>>>>> 2d6b5ff0c507989655a37138b777b6db08113e31
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Unity.VSCode.Editor.csproj">
+      <Project>{526085B4-F9A3-6F98-3C10-85E1A7806291}</Project>
+      <Name>Unity.VSCode.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
+      <Project>{23966E2E-EC89-E8AF-1831-DABB0DDC0D4C}</Project>
+      <Name>Unity.TextMeshPro.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
+      <Project>{B920E64B-741A-2FBB-521F-243B96DD50F6}</Project>
+      <Name>Unity.VisualStudio.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Sysroot.Linux_x86_64.csproj">
+      <Project>{6989EA2B-0FE7-3D96-9BA9-FFDEFE8CE60F}</Project>
+      <Name>Unity.Sysroot.Linux_x86_64</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Toolchain.Win-x86_64-Linux-x86_64.csproj">
+      <Project>{81FD8ACD-CA8A-E344-EE9C-4BC75054E444}</Project>
+      <Name>Unity.Toolchain.Win-x86_64-Linux-x86_64</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.csproj">
+      <Project>{AA6A4481-674D-5671-08A0-5C384C3FF109}</Project>
+      <Name>Unity.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Rider.Editor.csproj">
+      <Project>{33EB2006-EFDF-681A-9121-4D47CB947BEC}</Project>
+      <Name>Unity.Rider.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.SysrootPackage.Editor.csproj">
+      <Project>{375473F5-20ED-CB9A-CF22-3F7CB15557A5}</Project>
+      <Name>Unity.SysrootPackage.Editor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
