@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 using System.Linq;
-using System;
-using AnchorLinkTransportSharp.Src.Transports.UiToolkit.Ui;
 using UnityEngine.SceneManagement;
 
 public class MainScreen : MonoBehaviour
@@ -34,7 +32,6 @@ public class MainScreen : MonoBehaviour
     private const string PopUpAnimation = "pop-animation-hide";
 
     private string _currentSceneLoaded = "";
-    private int _mainPopupIndex = -1;
     private string _clickedButtonName = string.Empty;
 
 
@@ -45,6 +42,7 @@ public class MainScreen : MonoBehaviour
         _menu = root.Q<VisualElement>("menu");
         _maskBox = root.Q<VisualElement>("mask-box");
         _maskBox.style.visibility = Visibility.Hidden;
+        _maskBox.style.display = DisplayStyle.None;
 
         _mainMenuOptions = _menu.Q<VisualElement>("main-nav").Children().ToArray();
         _widgets = root.Q<VisualElement>("body").Children().ToList();
@@ -60,7 +58,11 @@ public class MainScreen : MonoBehaviour
 
         _closeViewButton = root.Q<Button>("close-view-button");
 
-        //_menu.RegisterCallback<TransitionEndEvent>(MenuTransitionEnd);
+#if UNITY_2021_0_OR_NEWER
+        _widgets.ForEach(x => x.style.translate = new StyleTranslate(new Translate(0, 254, 0)));
+#else
+        _widgets.ForEach(x => x.style.visibility = Visibility.Hidden);
+#endif
 
         StartCoroutine(PopupMenuAnimation());
         BindButtons();
@@ -77,9 +79,16 @@ public class MainScreen : MonoBehaviour
                 SceneManager.UnloadSceneAsync(_currentSceneLoaded);
                 _currentSceneLoaded = "";
 
-                _maskBox.Hide();
+                _maskBox.style.visibility = Visibility.Hidden;
+                _maskBox.style.display = DisplayStyle.None;
 
+
+#if UNITY_2021_0_OR_NEWER
                 _widgets.ForEach(x => x.style.translate = new StyleTranslate(new Translate(0, 254, 0)));
+#else
+                _widgets.ForEach(x => x.style.visibility = Visibility.Hidden);
+#endif
+
             }
         };
 
@@ -87,14 +96,24 @@ public class MainScreen : MonoBehaviour
         {
             _clickedButtonName = _anchorLabel.text;
 
+#if UNITY_2021_0_OR_NEWER
             _widgets.ForEach(x => x.style.translate = new StyleTranslate(new Translate(0, 0, 0)));
+#else
+            _widgets.ForEach(x => x.style.visibility = Visibility.Visible);
+#endif
+
         });
 
         _ualLabel.RegisterCallback<ClickEvent>(evt =>
         {
             _clickedButtonName = _ualLabel.text;
 
+#if UNITY_2021_0_OR_NEWER
             _widgets.ForEach(x => x.style.translate = new StyleTranslate(new Translate(0, 0, 0)));
+#else
+            _widgets.ForEach(x => x.style.visibility = Visibility.Visible);
+#endif
+
         });
 
         _atomicAssetLabel.RegisterCallback<ClickEvent>(evt =>
@@ -157,18 +176,6 @@ public class MainScreen : MonoBehaviour
 
     #region Others
 
-    //private void MenuTransitionEnd(TransitionEndEvent evt)
-    //{
-    //    if (!evt.stylePropertyNames.Contains("opacity")) { return; }
-
-    //    if (_mainPopupIndex < _mainMenuOptions.Length - 1)
-    //    {
-    //        _mainPopupIndex++;
-
-    //        _mainMenuOptions[_mainPopupIndex].ToggleInClassList(PopUpAnimation);
-    //    }
-    //}
-
     private IEnumerator PopupMenuAnimation()
     {
         yield return new WaitForSeconds(1.0f);
@@ -178,7 +185,9 @@ public class MainScreen : MonoBehaviour
 
     private void LoadScene(string targetScene)
     {
-        _maskBox.Show();
+        _maskBox.style.visibility = Visibility.Visible;
+        _maskBox.style.display = DisplayStyle.Flex;
+
         _currentSceneLoaded = targetScene;
         SceneManager.LoadScene(targetScene, LoadSceneMode.Additive);
     }

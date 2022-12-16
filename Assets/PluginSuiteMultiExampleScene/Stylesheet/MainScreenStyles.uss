@@ -15,7 +15,7 @@
     transition-timing-function: ease;
     -unity-font: url('project://database/Assets/Packages/anchorlinktransportsharp/Examples/UiToolkit/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&guid=1cd74a0089e942a4ba2129d8eb6be746&type=3#NotInter-Regular');
     -unity-font-style: bold;
-    font-size: 32px;
+    font-size: 24px;
 }
 
 .label-tag:hover {
@@ -24,7 +24,7 @@
     scale: 1.2 1.2;
     color: rgb(255, 255, 255);
     -unity-font: url('project://database/Assets/Packages/anchorlinktransportsharp/Examples/UiToolkit/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&guid=1cd74a0089e942a4ba2129d8eb6be746&type=3#NotInter-Regular');
-    font-size: 36px;
+    font-size: 26px;
     -unity-font-style: bold;
 }
 
