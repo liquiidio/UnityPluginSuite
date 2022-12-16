@@ -1,4 +1,3 @@
-#define UNITY_2021_0_OR_NEWER
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
