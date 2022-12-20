@@ -72,6 +72,12 @@ public class MainScreen : MonoBehaviour
 
     private void BindButtons()
     {
+
+#if UNITY_WEBGL
+        _quitLabel.style.visibility = Visibility.Hidden;
+        _quitLabel.style.display = DisplayStyle.None;
+#endif
+
         _closeViewButton.clickable.clicked += () =>
         {
             if (_currentSceneLoaded != "")

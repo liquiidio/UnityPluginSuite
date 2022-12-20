@@ -12,10 +12,10 @@ EditorBuildSettings:
     path: Assets/Packages/universalauthenticatorlibrary/Examples/UiToolkit/UiToolkitUALExampleScene.unity
     guid: b1d9ce7bf04465048a2ee87c7857b90b
   - enabled: 1
-    path: Assets/Packages/anchorlinktransportsharp/Examples/Canvas/ExampleCanvasScene.unity
+    path: Assets/Packages/anchorlinksharp/anchorlinktransportsharp/Examples/Canvas/ExampleCanvasScene.unity
     guid: 93436d97ee043924ebb50a190563bc55
   - enabled: 1
-    path: Assets/Packages/anchorlinktransportsharp/Examples/UiToolkit/UiToolkitAnchorExampleScene.unity
+    path: Assets/Packages/anchorlinksharp/anchorlinktransportsharp/Examples/UiToolkit/UiToolkitAnchorExampleScene.unity
     guid: e7fb44befa3d1ec48b4658f3235dd29e
   - enabled: 1
     path: Assets/Packages/atomicassetsapiclient/Examples/UiToolkit/AtomicAssetsExampleScene.unity
