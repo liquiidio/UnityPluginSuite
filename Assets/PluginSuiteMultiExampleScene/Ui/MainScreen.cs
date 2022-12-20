@@ -36,8 +36,8 @@ public class MainScreen : MonoBehaviour
     private string _currentSceneLoaded = "";
     private string _clickedButtonName = string.Empty;
 
-    [SerializeField] internal StyleSheet MainScreenAnimatedStyleSheet;
-    [SerializeField] internal StyleSheet MainScreenStyleSheet;
+    [SerializeField] internal StyleSheet AnimatedStyleSheet;
+    [SerializeField] internal StyleSheet WithoutAnimationStyleSheet;
 
     void Start()
     {
@@ -211,17 +211,12 @@ public class MainScreen : MonoBehaviour
     // check which stylesheet to use (animated or without animation)
     private void CheckStylesheet()
     {
-        //Root.styleSheets.Clear();
+        Root.styleSheets.Clear();
 
 #if UNITY_2021_0_OR_NEWER
-        Root.styleSheets.Remove(MainScreenStyleSheet);
-        Root.styleSheets.Add(MainScreenAnimatedStyleSheet);
+        Root.styleSheets.Add(AnimatedStyleSheet);
 #else
-        //Root.styleSheets.Remove(MainScreenAnimatedStyleSheet);
-        //Root.styleSheets.Add(MainScreenStyleSheet);
-
-        //Root.styleSheets.Remove(MainScreenStyleSheet);
-        //Root.styleSheets.Add(MainScreenStyleSheet);
+        Root.styleSheets.Add(WithoutAnimationStyleSheet);
 #endif
     }
 

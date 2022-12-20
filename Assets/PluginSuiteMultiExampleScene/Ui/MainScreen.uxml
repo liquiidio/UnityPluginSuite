@@ -1,5 +1,5 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/PluginSuiteMultiExampleScene/Stylesheet/MainScreenStyles.uss?fileID=7433441132597879392&amp;guid=bb3ae460d5f563e469032fa8b2a49c9f&amp;type=3#MainScreenStyles" />
+    <Style src="project://database/Assets/PluginSuiteMultiExampleScene/Stylesheet/WithoutAnimationStyles.uss?fileID=7433441132597879392&amp;guid=bb3ae460d5f563e469032fa8b2a49c9f&amp;type=3#WithoutAnimationStyles" />
     <ui:VisualElement name="screen" style="display: flex; visibility: visible;">
         <ui:VisualElement name="menu" class="pop-animation-hide" style="transform-origin: left; transition-property: all;">
             <ui:VisualElement name="navigation" style="flex-grow: 1; opacity: 1;">
