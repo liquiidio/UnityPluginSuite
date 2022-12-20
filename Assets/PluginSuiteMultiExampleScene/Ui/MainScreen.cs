@@ -26,6 +26,8 @@ public class MainScreen : MonoBehaviour
 
     private Button _closeViewButton;
 
+    public VisualElement Root;
+
     /*
      * Fields/Properties
      */
@@ -34,38 +36,46 @@ public class MainScreen : MonoBehaviour
     private string _currentSceneLoaded = "";
     private string _clickedButtonName = string.Empty;
 
+    [SerializeField] internal StyleSheet MainScreenAnimatedStyleSheet;
+    [SerializeField] internal StyleSheet MainScreenStyleSheet;
 
     void Start()
     {
-        var root = GetComponent<UIDocument>().rootVisualElement;
+         Root = GetComponent<UIDocument>().rootVisualElement;
 
-        _menu = root.Q<VisualElement>("menu");
-        _maskBox = root.Q<VisualElement>("mask-box");
+        _menu = Root.Q<VisualElement>("menu");
+        _maskBox = Root.Q<VisualElement>("mask-box");
         _maskBox.style.visibility = Visibility.Hidden;
         _maskBox.style.display = DisplayStyle.None;
 
         _mainMenuOptions = _menu.Q<VisualElement>("main-nav").Children().ToArray();
-        _widgets = root.Q<VisualElement>("body").Children().ToList();
-        _canvasWidgetScene = root.Q<VisualElement>("canvas-widget-container");
-        _uiTookitWidgetScene = root.Q<VisualElement>("ui-toolkit-widget-container");
+        _widgets = Root.Q<VisualElement>("body").Children().ToList();
+        _canvasWidgetScene = Root.Q<VisualElement>("canvas-widget-container");
+        _uiTookitWidgetScene = Root.Q<VisualElement>("ui-toolkit-widget-container");
 
-        _anchorLabel = root.Q<Label>("anchor-label");
-        _ualLabel = root.Q<Label>("ual-label");
-        _atomicAssetLabel = root.Q<Label>("atomic-asset-label");
-        _atomicMarketLabel = root.Q<Label>("atomic-market-label");
-        _hyperionLabel = root.Q<Label>("hyperion-label");
-        _quitLabel = root.Q<Label>("quit-label");
+        _anchorLabel = Root.Q<Label>("anchor-label");
+        _ualLabel = Root.Q<Label>("ual-label");
+        _atomicAssetLabel = Root.Q<Label>("atomic-asset-label");
+        _atomicMarketLabel = Root.Q<Label>("atomic-market-label");
+        _hyperionLabel = Root.Q<Label>("hyperion-label");
+        _quitLabel = Root.Q<Label>("quit-label");
 
-        _closeViewButton = root.Q<Button>("close-view-button");
+        _closeViewButton = Root.Q<Button>("close-view-button");
 
         StartCoroutine(PopupMenuAnimation());
         BindButtons();
+        CheckStylesheet();
     }
 
     #region Button Binding
 
     private void BindButtons()
     {
+
+#if UNITY_2021_0_OR_NEWER
+#else
+#endif
+
 
 #if UNITY_WEBGL
         _quitLabel.style.visibility = Visibility.Hidden;
@@ -194,6 +204,25 @@ public class MainScreen : MonoBehaviour
 
         _currentSceneLoaded = targetScene;
         SceneManager.LoadScene(targetScene, LoadSceneMode.Additive);
+    }
+
+
+
+    // check which stylesheet to use (animated or without animation)
+    private void CheckStylesheet()
+    {
+        //Root.styleSheets.Clear();
+
+#if UNITY_2021_0_OR_NEWER
+        Root.styleSheets.Remove(MainScreenStyleSheet);
+        Root.styleSheets.Add(MainScreenAnimatedStyleSheet);
+#else
+        //Root.styleSheets.Remove(MainScreenAnimatedStyleSheet);
+        //Root.styleSheets.Add(MainScreenStyleSheet);
+
+        //Root.styleSheets.Remove(MainScreenStyleSheet);
+        //Root.styleSheets.Add(MainScreenStyleSheet);
+#endif
     }
 
     #endregion

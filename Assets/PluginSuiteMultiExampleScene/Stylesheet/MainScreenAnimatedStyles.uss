@@ -9,12 +9,16 @@
 }
 
 .label-tag {
+    transition-duration: 0s;
+    transition-timing-function: ease;
     -unity-font: url('project://database/Assets/PluginSuiteMultiExampleScene/Stylesheet/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&guid=12617d3560256924395c1709b7f21d66&type=3#NotInter-Regular');
     -unity-font-style: bold;
     font-size: 24px;
 }
 
 .label-tag:hover {
+    transition-duration: 0.25s;
+    transition-timing-function: ease-out-back;
     scale: 1.2 1.2;
     color: rgb(255, 255, 255);
     -unity-font: url('project://database/Assets/PluginSuiteMultiExampleScene/Stylesheet/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&guid=12617d3560256924395c1709b7f21d66&type=3#NotInter-Regular');
@@ -28,12 +32,17 @@
     border-color: rgb(0, 0, 0);
     margin: 20px;
     translate: 0 254px;
+    transition-duration: 0.75s;
+    transition-delay: 0s;
+    transition-timing-function: ease-out-back;
     -unity-font: url('project://database/Assets/PluginSuiteMultiExampleScene/Stylesheet/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&guid=12617d3560256924395c1709b7f21d66&type=3#NotInter-Regular');
     -unity-font-style: bold;
 }
 
 .widget-container:hover {
     scale: 1.2 1.2;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-out-back;
     -unity-font: url('project://database/Assets/PluginSuiteMultiExampleScene/Stylesheet/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&guid=12617d3560256924395c1709b7f21d66&type=3#NotInter-Regular');
     -unity-font-style: bold;
 }
@@ -55,6 +64,9 @@
 #menu {
     width: 28%;
     flex-direction: row;
+    transition-property: opacity;
+    transition-duration: 0.75s;
+    transition-timing-function: ease-out-back;
     -unity-font: url('project://database/Assets/PluginSuiteMultiExampleScene/Stylesheet/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&guid=12617d3560256924395c1709b7f21d66&type=3#NotInter-Regular');
 }
 

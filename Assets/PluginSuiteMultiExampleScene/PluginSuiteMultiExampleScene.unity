@@ -261,5 +261,13 @@ PrefabInstance:
       propertyPath: CloseMask
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4712384468836275613, guid: 274895f91d734ca458a0a4855557eb62, type: 3}
+      propertyPath: MainScreenStyleSheet
+      value: 
+      objectReference: {fileID: 7433441132597879392, guid: bb3ae460d5f563e469032fa8b2a49c9f, type: 3}
+    - target: {fileID: 4712384468836275613, guid: 274895f91d734ca458a0a4855557eb62, type: 3}
+      propertyPath: MainScreenAnimatedStyleSheet
+      value: 
+      objectReference: {fileID: 7433441132597879392, guid: 93044701934e2b84d82811ea908f244b, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 274895f91d734ca458a0a4855557eb62, type: 3}

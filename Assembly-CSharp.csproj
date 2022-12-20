@@ -422,6 +422,7 @@
     <None Include="Assets\Packages\wcwunitywebgl\Examples\Ui\LoginView.uxml" />
     <None Include="Assets\Packages\atomicmarketapiclient\Examples\UiToolkit\Stylesheet\AtomicMarketUSSFile.uss" />
     <None Include="Assets\Packages\wombatunitywebgl\Examples\Ui\LoginView.uxml" />
+    <None Include="Assets\PluginSuiteMultiExampleScene\Stylesheet\MainScreenAnimatedStyles.uss" />
     <None Include="Assets\Packages\anchorlinksharp\anchorlinktransportsharp\Packages\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\Packages\anchorlinksharp\anchorlinktransportsharp\Packages\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
