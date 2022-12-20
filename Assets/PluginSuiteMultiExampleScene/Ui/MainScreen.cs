@@ -58,12 +58,6 @@ public class MainScreen : MonoBehaviour
 
         _closeViewButton = root.Q<Button>("close-view-button");
 
-#if UNITY_2021_0_OR_NEWER
-        _widgets.ForEach(x => x.style.translate = new StyleTranslate(new Translate(0, 254, 0)));
-#else
-        _widgets.ForEach(x => x.style.visibility = Visibility.Hidden);
-#endif
-
         StartCoroutine(PopupMenuAnimation());
         BindButtons();
     }
@@ -76,6 +70,13 @@ public class MainScreen : MonoBehaviour
 #if UNITY_WEBGL
         _quitLabel.style.visibility = Visibility.Hidden;
         _quitLabel.style.display = DisplayStyle.None;
+#endif
+
+
+#if UNITY_2021_0_OR_NEWER
+        _widgets.ForEach(x => x.style.translate = new StyleTranslate(new Translate(0, 254, 0)));
+#else
+        _widgets.ForEach(x => x.style.visibility = Visibility.Hidden);
 #endif
 
         _closeViewButton.clickable.clicked += () =>
@@ -94,7 +95,6 @@ public class MainScreen : MonoBehaviour
 #else
                 _widgets.ForEach(x => x.style.visibility = Visibility.Hidden);
 #endif
-
             }
         };
 
@@ -107,7 +107,6 @@ public class MainScreen : MonoBehaviour
 #else
             _widgets.ForEach(x => x.style.visibility = Visibility.Visible);
 #endif
-
         });
 
         _ualLabel.RegisterCallback<ClickEvent>(evt =>
@@ -119,7 +118,6 @@ public class MainScreen : MonoBehaviour
 #else
             _widgets.ForEach(x => x.style.visibility = Visibility.Visible);
 #endif
-
         });
 
         _atomicAssetLabel.RegisterCallback<ClickEvent>(evt =>
