@@ -4,10 +4,8 @@
     --font-size-h1: 35px;
     --font-size-h2: 30px;
     --font-size-h3: 25px;
-    --background-img: url('project://database/Assets/PluginSuiteMultiExampleScene/Fonts/Syncopate-Bold.ttf?fileID=12800000&guid=9d54ae6d0947e0344b554df63e7becce&type=3#Syncopate-Bold');
     -unity-font: url('project://database/Assets/PluginSuiteMultiExampleScene/Stylesheet/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&guid=12617d3560256924395c1709b7f21d66&type=3#NotInter-Regular');
     color: var(--color-2);
-    -unity-font-definition: none;
 }
 
 .label-tag {

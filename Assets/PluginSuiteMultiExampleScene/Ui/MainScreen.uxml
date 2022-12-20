@@ -5,10 +5,10 @@
             <ui:VisualElement name="navigation" style="flex-grow: 1; opacity: 1;">
                 <ui:VisualElement name="main-nav">
                     <ui:Label text="ANCHOR" display-tooltip-when-elided="true" name="anchor-label" class="label-tag" style="font-size: 28px;" />
-                    <ui:Label text="UAL" display-tooltip-when-elided="true" name="ual-label" class="label-tag" />
+                    <ui:Label text="UAL" display-tooltip-when-elided="true" name="ual-label" class="label-tag" style="font-size: 28px;" />
                     <ui:Label text="ATOMIC ASSETS" display-tooltip-when-elided="true" name="atomic-asset-label" class="label-tag" style="font-size: 28px;" />
                     <ui:Label text="ATOMIC MARKET" display-tooltip-when-elided="true" name="atomic-market-label" class="label-tag" style="font-size: 28px;" />
-                    <ui:Label text="HYPERION" display-tooltip-when-elided="true" name="hyperion-label" class="label-tag" />
+                    <ui:Label text="HYPERION" display-tooltip-when-elided="true" name="hyperion-label" class="label-tag" style="font-size: 28px;" />
                     <ui:Label text="QUIT" display-tooltip-when-elided="true" name="quit-label" class="label-tag" style="font-size: 28px;" />
                 </ui:VisualElement>
             </ui:VisualElement>
