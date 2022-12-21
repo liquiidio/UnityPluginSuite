@@ -1,7 +1,7 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/PluginSuiteMultiExampleScene/Stylesheet/PluginMultiSceneStyle.uss?fileID=7433441132597879392&amp;guid=bb3ae460d5f563e469032fa8b2a49c9f&amp;type=3#PluginMultiSceneStyle" />
     <ui:VisualElement name="screen" style="display: flex; visibility: visible; height: 100%; width: 100%; background-image: url(&apos;project://database/Assets/PluginSuiteMultiExampleScene/Sprites/11%20HRRed%20Alert.jpg?fileID=2800000&amp;guid=a761484c670d3ae4daec93e493521228&amp;type=3#11 HRRed Alert&apos;); flex-direction: row;">
-        <ui:VisualElement name="menu" style="transform-origin: left; transition-property: all; width: 28%; height: 100%; flex-direction: row; background-color: rgba(0, 0, 0, 0); opacity: 1;">
+        <ui:VisualElement name="menu" style="transform-origin: left; width: 28%; height: 100%; flex-direction: row; background-color: rgba(0, 0, 0, 0); opacity: 1;">
             <ui:VisualElement name="navigation" style="flex-grow: 1; opacity: 0.8; justify-content: center; align-items: center; width: auto; background-color: rgb(10, 8, 8);">
                 <ui:VisualElement name="main-nav" style="align-items: center; justify-content: center;">
                     <ui:Label text="ANCHOR" display-tooltip-when-elided="true" name="anchor-label" class="label-tag" />
