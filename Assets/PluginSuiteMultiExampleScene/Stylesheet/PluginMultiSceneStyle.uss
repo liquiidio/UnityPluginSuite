@@ -1,0 +1,37 @@
+.label-tag {
+    -unity-font: url('project://database/Assets/PluginSuiteMultiExampleScene/Stylesheet/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&guid=12617d3560256924395c1709b7f21d66&type=3#NotInter-Regular');
+    -unity-font-style: bold;
+    font-size: 30px;
+    color: rgba(108, 160, 195, 255);
+}
+
+.label-tag:hover {
+    font-size: 32px;
+    -unity-font-style: bold;
+    color: rgba(255, 255, 255, 255);
+    -unity-font: url('project://database/Assets/PluginSuiteMultiExampleScene/Stylesheet/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&guid=12617d3560256924395c1709b7f21d66&type=3#NotInter-Regular');
+}
+
+.widget-container {
+    width: 300px;
+    height: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.widget-container:hover {
+    width: 330px;
+    height: 230px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.header-label {
+    -unity-font: url('project://database/Assets/PluginSuiteMultiExampleScene/Stylesheet/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&guid=12617d3560256924395c1709b7f21d66&type=3#NotInter-Regular');
+    -unity-font-style: bold;
+    font-size: 32px;
+}

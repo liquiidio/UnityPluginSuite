@@ -78,6 +78,7 @@
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Models\Transaction3.cs" />
     <Compile Include="Assets\Packages\atomicmarketapiclient\Src\AtomicMarketApiClient\HttpRequestBuilder.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Responses\GetHealthResponse.cs" />
+    <Compile Include="Assets\Packages\anchorlinksharp\eosiosigningrequestsharp\Abi.cs" />
     <Compile Include="Assets\Packages\anchorlinksharp\anchorlinktransportsharp\Src\Transports\Canvas\UnityCanvasTransport.cs" />
     <Compile Include="Assets\Packages\atomicmarketapiclient\Src\AtomicMarketApiClient\IHttpHandler.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Models\Permission2.cs" />
@@ -100,7 +101,6 @@
     <Compile Include="Assets\Packages\eossharp\EosSharp\EosSharp.Core\Api\v1\EosApi.cs" />
     <Compile Include="Assets\Packages\anchorlinksharp\AnchorLinkSharp\LinkSessionDataConverter.cs" />
     <Compile Include="Assets\Packages\anchorlinksharp\AnchorLinkSharp\LinkSignatureProvider.cs" />
-    <Compile Include="Assets\Packages\anchorlinksharp\eosiosigningrequestsharp\Base64EncodingUtility.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Models\Delta.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Responses\GetVotersResponse.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Responses\GetTokensResponse.cs" />
@@ -145,6 +145,7 @@
     <Compile Include="Assets\Packages\atomicmarketapiclient\Src\AtomicMarketApiClient\Offers\OffersUriParameterBuilder.cs" />
     <Compile Include="Assets\Packages\anchorlinksharp\anchorlinktransportsharp\Src\StorageProviders\JsonLocalStorage.cs" />
     <Compile Include="Assets\Packages\eossharp\EosSharp\EosSharp.Core\Providers\AbiSerializationProvider.cs" />
+    <Compile Include="Assets\Packages\anchorlinksharp\eosiosigningrequestsharp\Base64EncodingUtility.cs" />
     <Compile Include="Assets\Packages\universalauthenticatorlibrary\Src\Authenticators\Anchor\AnchorAuthenticator.cs" />
     <Compile Include="Assets\Packages\atomicassetsapiclient\Src\AtomicAssetsApiClient\Burns\BurnDto.cs" />
     <Compile Include="Assets\Packages\atomicmarketapiclient\Src\AtomicMarketApiClient\Assets\AssetsApi.cs" />
@@ -201,15 +202,14 @@
     <Compile Include="Assets\Packages\anchorlinksharp\AnchorLinkSharp\LinkAbiData.cs" />
     <Compile Include="Assets\Packages\anchorlinksharp\anchorlinktransportsharp\Src\Transports\UiToolkit\Ui\QrCodePanel.cs" />
     <Compile Include="Assets\Packages\atomicassetsapiclient\Src\AtomicAssetsApiClient\AtomicAssetsApiFactory.cs" />
+    <Compile Include="Assets\Packages\anchorlinksharp\eosiosigningrequestsharp\SigningRequest.cs" />
     <Compile Include="Assets\Packages\atomicassetsapiclient\Src\AtomicAssetsApiClient\Assets\AssetDto.cs" />
     <Compile Include="Assets\Packages\atomicmarketapiclient\Src\AtomicMarketApiClient\IUriParameterBuilder.cs" />
     <Compile Include="Assets\Packages\anchorlinksharp\anchorlinktransportsharp\Examples\UiToolkit\Ui\LoginView.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Models\Permission.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Dtos\GetBlockByNumDto.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Models\Action5.cs" />
-    <Compile Include="Assets\Packages\anchorlinksharp\eosiosigningrequestsharp\Abi.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Models\Act.cs" />
-    <Compile Include="Assets\Packages\anchorlinksharp\eosiosigningrequestsharp\SigningRequest.cs" />
     <Compile Include="Assets\Packages\atomicmarketapiclient\Src\AtomicMarketApiClient\MarketPlaces\MarketPlacesApi.cs" />
     <Compile Include="Assets\Packages\universalauthenticatorlibrary\Src\Authenticator.cs" />
     <Compile Include="Assets\Packages\atomicassetsapiclient\Src\AtomicAssetsApiClient\Exceptions\ApiException.cs" />
@@ -257,7 +257,6 @@
     <Compile Include="Assets\Packages\atomicmarketapiclient\Src\AtomicMarketApiClient\Sales\SalesApi.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Responses\GetActivatedProtocolFeaturesBody.cs" />
     <Compile Include="Assets\Packages\eossharp\EosSharp\EosSharp.Core\Helpers\SerializationHelper.cs" />
-    <Compile Include="Assets\Packages\anchorlinksharp\eosiosigningrequestsharp\SigningRequestAbi.cs" />
     <Compile Include="Assets\Packages\atomicassetsapiclient\Src\AtomicAssetsApiClient\Accounts\AccountDto.cs" />
     <Compile Include="Assets\Packages\atomicassetsapiclient\Src\AtomicAssetsApiClient\Offers\OffersDto.cs" />
     <Compile Include="Assets\Packages\atomicassetsapiclient\Src\AtomicAssetsApiClient\Collections\CollectionsApi.cs" />
@@ -331,6 +330,7 @@
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Models\AuthSequence.cs" />
     <Compile Include="Assets\Packages\universalauthenticatorlibrary\Examples\UiToolkit\Ui\ExampleMainView.cs" />
     <Compile Include="Assets\Packages\eossharp\EosSharp\EosSharp.Core\SignedTransaction.cs" />
+    <Compile Include="Assets\Packages\anchorlinksharp\eosiosigningrequestsharp\SigningRequestAbi.cs" />
     <Compile Include="Assets\Packages\anchorlinksharp\AnchorLinkSharp\LinkFallbackSession.cs" />
     <Compile Include="Assets\Packages\atomicmarketapiclient\Src\AtomicMarketApiClient\Auctions\AuctionsApi.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Models\Sort.cs" />
@@ -422,7 +422,6 @@
     <None Include="Assets\Packages\wcwunitywebgl\Examples\Ui\LoginView.uxml" />
     <None Include="Assets\Packages\atomicmarketapiclient\Examples\UiToolkit\Stylesheet\AtomicMarketUSSFile.uss" />
     <None Include="Assets\Packages\wombatunitywebgl\Examples\Ui\LoginView.uxml" />
-    <None Include="Assets\PluginSuiteMultiExampleScene\Stylesheet\AnimatedStyles.uss" />
     <None Include="Assets\Packages\anchorlinksharp\anchorlinktransportsharp\Packages\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\Packages\anchorlinksharp\anchorlinktransportsharp\Packages\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
@@ -462,7 +461,7 @@
     <None Include="Assets\Packages\hyperionapiclient\Examples\UiToolkit\Stylesheet\HyperionUSSFile.uss" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
-    <None Include="Assets\PluginSuiteMultiExampleScene\Stylesheet\WithoutAnimationStyles.uss" />
+    <None Include="Assets\PluginSuiteMultiExampleScene\Stylesheet\PluginMultiSceneStyle.uss" />
     <None Include="Assets\Packages\atomicassetsapiclient\Examples\UiToolkit\UI\AtomicAssetPanel.uxml" />
     <None Include="Assets\PluginSuiteMultiExampleScene\Ui\MainScreen.uxml" />
     <None Include="Assets\Packages\universalauthenticatorlibrary\Src\UiToolkit\Ui\AuthenticatorButtonItem.uxml" />
