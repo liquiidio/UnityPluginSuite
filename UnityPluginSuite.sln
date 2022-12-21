@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{976333ED-E96F-B856-2B0C-A3342BFEBCEB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UiToolkitAssemly", "UiToolkitAssemly.csproj", "{48A95C9C-8EDA-6A27-57DF-73953D142319}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{976333ED-E96F-B856-2B0C-A3342BFEBCEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{976333ED-E96F-B856-2B0C-A3342BFEBCEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{976333ED-E96F-B856-2B0C-A3342BFEBCEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{976333ED-E96F-B856-2B0C-A3342BFEBCEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48A95C9C-8EDA-6A27-57DF-73953D142319}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48A95C9C-8EDA-6A27-57DF-73953D142319}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48A95C9C-8EDA-6A27-57DF-73953D142319}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48A95C9C-8EDA-6A27-57DF-73953D142319}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

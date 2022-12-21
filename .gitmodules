@@ -27,4 +27,4 @@
 	url = https://github.com/liquiidio/WombatUnityWebGl
 [submodule "Assets/Packages/wcwunitywebgl"]
 	path = Assets/Packages/wcwunitywebgl
-	url = https://github.com/liquiidio/WCWUnityWebGl
+	url = https://github.com/liquiidio/WcwUnityWebGl.git
