@@ -31,13 +31,9 @@ public class MainScreen : MonoBehaviour
     /*
      * Fields/Properties
      */
-    private const string PopUpAnimation = "pop-animation-hide";
-
     private string _currentSceneLoaded = "";
     private string _clickedButtonName = string.Empty;
 
-    [SerializeField] internal StyleSheet AnimatedStyleSheet;
-    [SerializeField] internal StyleSheet WithoutAnimationStyleSheet;
 
     void Start()
     {
@@ -62,20 +58,13 @@ public class MainScreen : MonoBehaviour
 
         _closeViewButton = Root.Q<Button>("close-view-button");
 
-        StartCoroutine(PopupMenuAnimation());
         BindButtons();
-        CheckStylesheet();
     }
 
     #region Button Binding
 
     private void BindButtons()
     {
-
-#if UNITY_2021_0_OR_NEWER
-#else
-#endif
-
 
 #if UNITY_WEBGL
         _quitLabel.style.visibility = Visibility.Hidden;
@@ -190,13 +179,6 @@ public class MainScreen : MonoBehaviour
 
     #region Others
 
-    private IEnumerator PopupMenuAnimation()
-    {
-        yield return new WaitForSeconds(1.0f);
-
-        _menu.ToggleInClassList(PopUpAnimation);
-    }
-
     private void LoadScene(string targetScene)
     {
         _maskBox.style.visibility = Visibility.Visible;
@@ -204,20 +186,6 @@ public class MainScreen : MonoBehaviour
 
         _currentSceneLoaded = targetScene;
         SceneManager.LoadScene(targetScene, LoadSceneMode.Additive);
-    }
-
-
-
-    // check which stylesheet to use (animated or without animation)
-    private void CheckStylesheet()
-    {
-        Root.styleSheets.Clear();
-
-#if UNITY_2021_0_OR_NEWER
-        Root.styleSheets.Add(AnimatedStyleSheet);
-#else
-        Root.styleSheets.Add(WithoutAnimationStyleSheet);
-#endif
     }
 
     #endregion
