@@ -1,5 +1,7 @@
 # UnityPluginSuite
+The Unity Plugin Suite provides a complete set of all required plugins and tools for the integration of various available services and allows Unity developers to create blockchain-based games based with free choice between available and commonly used services.
 
+A full implementation/integration of all interfaces, 3d party solutions and protocols known and widely used from other platforms is essential to provide Unity developers with the same functionality and richness of tools, plugins and libraries while maintaining the same user and developer experience known from other platforms.
 
 ## Download for Unity3D
 
