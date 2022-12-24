@@ -248,12 +248,10 @@
     <Compile Include="Assets\Packages\anchorlinksharp\anchorlinktransportsharp\Src\Transports\UiToolkit\Ui\ScreenBase.cs" />
     <Compile Include="Assets\Packages\atomicmarketapiclient\Src\AtomicMarketApiClient\StatsDto.cs" />
     <Compile Include="Assets\Packages\atomicassetsapiclient\Src\AtomicAssetsApiClient\Transfers\TransfersApi.cs" />
-    <Compile Include="Assets\Packages\universalauthenticatorlibrary\Examples\ExampleUser.cs" />
     <Compile Include="Assets\Packages\atomicmarketapiclient\Src\AtomicMarketApiClient\Pricing\PricingApi.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Models\Stats.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Responses\GetProducersResponse.cs" />
     <Compile Include="Assets\Packages\atomicmarketapiclient\Src\AtomicMarketApiClient\AtomicMarketApiFactory.cs" />
-    <Compile Include="Assets\Packages\universalauthenticatorlibrary\Examples\MultiUiExampleScript.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Responses\GetCodeResponse.cs" />
     <Compile Include="Assets\Packages\atomicassetsapiclient\Src\AtomicAssetsApiClient\Accounts\AccountsUriParameterBuilder.cs" />
     <Compile Include="Assets\Packages\wcwunitywebgl\Examples\Ui\MainView.cs" />
@@ -351,7 +349,6 @@
     <Compile Include="Assets\Packages\anchorlinksharp\anchorlinktransportsharp\Examples\UiToolkit\UiToolkitExample.cs" />
     <Compile Include="Assets\Packages\eossharp\EosSharp\EosSharp.Core\Interfaces\IHttpHandler.cs" />
     <Compile Include="Assets\Packages\anchorlinksharp\anchorlinktransportsharp\Examples\Canvas\CanvasExample.cs" />
-    <Compile Include="Assets\Packages\universalauthenticatorlibrary\Examples\ExampleAuthenticator.cs" />
     <Compile Include="Assets\Packages\atomicassetsapiclient\Src\AtomicAssetsApiClient\Config\ConfigApi.cs" />
     <Compile Include="Assets\Packages\anchorlinksharp\AnchorLinkSharp\TransactResult.cs" />
     <Compile Include="Assets\Packages\anchorlinksharp\AnchorLinkSharp\LinkInfo.cs" />
@@ -413,6 +410,7 @@
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Models\Field.cs" />
     <Compile Include="Assets\Packages\universalauthenticatorlibrary\Src\Authenticators\WaxCloudWallet\WaxCloudWalletAuthenticator.cs" />
     <Compile Include="Assets\Packages\atomicassetsapiclient\Src\AtomicAssetsApiClient\Accounts\AccountsDto.cs" />
+    <Compile Include="Assets\Packages\universalauthenticatorlibrary\Src\UnityUAL\UalConstants.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Packages\anchorlinksharp\anchorlinktransportsharp\Src\Transports\UiToolkit\Ui\FailurePanel.uxml" />
