@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class MainScreen : MonoBehaviour
 {
-    /*
+    /**
      * Child-Controls
      */
     private VisualElement _menu;
@@ -26,7 +26,7 @@ public class MainScreen : MonoBehaviour
 
     private Button _closeViewButton;
 
-    /*
+    /**
      * Fields/Properties
      */
     private const string PopUpAnimation = "pop-animation-hide";
@@ -69,7 +69,9 @@ public class MainScreen : MonoBehaviour
     }
 
     #region Button Binding
-
+    /// <summary>
+    /// Binds all the event interaction 
+    /// </summary>
     private void BindButtons()
     {
         _closeViewButton.clickable.clicked += () =>
@@ -175,7 +177,10 @@ public class MainScreen : MonoBehaviour
     #endregion
 
     #region Others
-
+    /// <summary>
+    /// Populate the menu in animated style
+    /// </summary>
+    /// <returns></returns>
     private IEnumerator PopupMenuAnimation()
     {
         yield return new WaitForSeconds(1.0f);
@@ -183,6 +188,10 @@ public class MainScreen : MonoBehaviour
         _menu.ToggleInClassList(PopUpAnimation);
     }
 
+    /// <summary>
+    /// Load scene that is being pass by the scene name as a string
+    /// </summary>
+    /// <param name="targetScene"></param>
     private void LoadScene(string targetScene)
     {
         _maskBox.style.visibility = Visibility.Visible;
