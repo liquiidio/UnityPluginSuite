@@ -64,6 +64,11 @@ public class MainScreen : MonoBehaviour
         _widgets.ForEach(x => x.style.visibility = Visibility.Hidden);
 #endif
 
+#if UNITY_WEBGL
+        _quitLabel.style.visibility = Visibility.Hidden;
+        _quitLabel.style.display = DisplayStyle.None;
+#endif
+
         StartCoroutine(PopupMenuAnimation());
         BindButtons();
     }
@@ -90,7 +95,6 @@ public class MainScreen : MonoBehaviour
 #else
                 _widgets.ForEach(x => x.style.visibility = Visibility.Hidden);
 #endif
-
             }
         };
 
@@ -143,10 +147,10 @@ public class MainScreen : MonoBehaviour
             switch (_clickedButtonName)
             {
                 case "ANCHOR":
-                    LoadScene("ExampleCanvasScene");
+                    LoadScene("CanvasAnchorExampleScene");
                     break;
                 case "UAL":
-                    LoadScene("CanvasScene");
+                    LoadScene("CanvasUALExampleScene");
                     break;
             }
         });
