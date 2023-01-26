@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 using System.Linq;
+using AnchorLinkTransportSharp.Examples.UiToolkit.Ui;
+using AnchorLinkTransportSharp.Src.Transports.UiToolkit.Ui;
 using UnityEngine.SceneManagement;
+using UniversalAuthenticatorLibrary.Examples.UiToolkit.Ui;
 
 public class MainScreen : MonoBehaviour
 {
@@ -33,7 +36,6 @@ public class MainScreen : MonoBehaviour
 
     private string _currentSceneLoaded = "";
     private string _clickedButtonName = string.Empty;
-
 
     void Start()
     {
@@ -205,7 +207,34 @@ public class MainScreen : MonoBehaviour
         SceneManager.LoadScene(targetScene, LoadSceneMode.Additive);
     }
 
+    /// <summary>Called when ctrl + v is pressed in browser (webgl)</summary>
+    /// <param name="pastedText">The pasted text.</param>
+    public void OnBrowserClipboardPaste(string pastedText)
+    {
+        if (string.IsNullOrEmpty(pastedText))
+            return;
+
+        switch (_currentSceneLoaded)
+        {
+            case "UiToolkitAnchorExampleScene":
+                MainView.OnBrowserClipboardPaste(pastedText);
+                break;
+            case "UiToolkitUALExampleScene":
+                ExampleMainView.OnBrowserClipboardPaste(pastedText);
+                break;
+            case "AtomicAssetsExampleScene":
+                AtomicAssetPanel.OnBrowserClipboardPaste(pastedText);
+                break;
+            case "AtomicMarketExampleScene":
+                AtomicMarketPanel.OnBrowserClipboardPaste(pastedText);
+                break;
+            case "HyperionExampleScene":
+                HyperionExamplePanel.OnBrowserClipboardPaste(pastedText);
+                break;
+        }
+    }
+
     #endregion
-}
+    }
 
 

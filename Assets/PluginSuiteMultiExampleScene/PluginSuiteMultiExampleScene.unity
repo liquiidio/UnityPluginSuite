@@ -261,5 +261,9 @@ PrefabInstance:
       propertyPath: CloseMask
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4712384468836275613, guid: 274895f91d734ca458a0a4855557eb62, type: 3}
+      propertyPath: AtomicAssetPanel
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 274895f91d734ca458a0a4855557eb62, type: 3}
