@@ -244,21 +244,11 @@ public class MultiExampleMainPanel : MonoBehaviour
         switch (_currentSceneLoaded)
         {
             case "UiToolkitAnchorExampleScene":
-<<<<<<< HEAD
                 SceneManager.GetSceneByName(_currentSceneLoaded).GetRootGameObjects().ToList()
                             .Find(child => child.GetComponentInChildren<AnchorExamplePanel>())
                             .GetComponentInChildren<AnchorExamplePanel>().OnBrowserClipboardPaste(pastedText);
 
                 print("This new method works!");
-
-=======
-                SceneManager.GetSceneByName(_currentSceneLoaded)
-                            .GetRootGameObjects()
-                            .First(child => child.GetComponentInChildren<AnchorExamplePanel>())
-                            .SendMessage("OnBrowserClipboardPaste", pastedText);
-
-                print("This is the get component method");
->>>>>>> afe132c0b90fdfac9465b80bcafe15c5e5bb6c77
                 //AnchorExamplePanel.MultiExampleClipboardPaste(pastedText);
                 break;
             case "UiToolkitUALExampleScene":
