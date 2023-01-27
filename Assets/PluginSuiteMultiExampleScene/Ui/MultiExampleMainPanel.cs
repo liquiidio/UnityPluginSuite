@@ -6,6 +6,7 @@ using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
 using AnchorLinkTransportSharp.Examples.UiToolkit.Ui;
 using UniversalAuthenticatorLibrary.Examples.UiToolkit.Ui;
+using WaxCloudWalletUnity.Examples.Ui;
 
 public class MultiExampleMainPanel : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class MultiExampleMainPanel : MonoBehaviour
 
     private Label _anchorLabel;
     private Label _ualLabel;
+    private Label _wcwLabel;
     private Label _atomicAssetLabel;
     private Label _atomicMarketLabel;
     private Label _hyperionLabel;
@@ -52,6 +54,7 @@ public class MultiExampleMainPanel : MonoBehaviour
 
         _anchorLabel = root.Q<Label>("anchor-label");
         _ualLabel = root.Q<Label>("ual-label");
+        _wcwLabel = root.Q<Label>("wcw-label");
         _atomicAssetLabel = root.Q<Label>("atomic-asset-label");
         _atomicMarketLabel = root.Q<Label>("atomic-market-label");
         _hyperionLabel = root.Q<Label>("hyperion-label");
@@ -65,9 +68,15 @@ public class MultiExampleMainPanel : MonoBehaviour
         _widgets.ForEach(x => x.style.visibility = Visibility.Hidden);
 #endif
 
+        _wcwLabel.style.visibility = Visibility.Hidden;
+        _wcwLabel.style.display = DisplayStyle.None;
+
 #if UNITY_WEBGL
         _quitLabel.style.visibility = Visibility.Hidden;
         _quitLabel.style.display = DisplayStyle.None;
+        
+        _wcwLabel.style.visibility = Visibility.Visible;
+        _wcwLabel.style.display = DisplayStyle.Flex;
 #endif
 
         StartCoroutine(PopupMenuAnimation());
@@ -121,6 +130,11 @@ public class MultiExampleMainPanel : MonoBehaviour
             _widgets.ForEach(x => x.style.visibility = Visibility.Visible);
 #endif
 
+        });
+
+        _wcwLabel.RegisterCallback<ClickEvent>(evt =>
+        {
+            LoadScene("WaxCloudWalletExampleScene");
         });
 
         _atomicAssetLabel.RegisterCallback<ClickEvent>(evt =>
@@ -222,6 +236,9 @@ public class MultiExampleMainPanel : MonoBehaviour
                 break;
             case "UiToolkitUALExampleScene":
                 UALExamplePanel.MultiExampleClipboardPaste(pastedText);
+                break;
+            case "WaxCloudWalletExampleScene":
+                WaxCloudWalletMainPanel.MultiExampleClipboardPaste(pastedText);
                 break;
             case "AtomicAssetsExampleScene":
                 AtomicAssetsExamplePanel.MultiExampleClipboardPaste(pastedText);
