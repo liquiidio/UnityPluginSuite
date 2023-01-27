@@ -68,8 +68,8 @@ public class MultiExampleMainPanel : MonoBehaviour
         _widgets.ForEach(x => x.style.visibility = Visibility.Hidden);
 #endif
 
-        _wcwLabel.style.visibility = Visibility.Hidden;
-        _wcwLabel.style.display = DisplayStyle.None;
+        //_wcwLabel.style.visibility = Visibility.Hidden;
+        //_wcwLabel.style.display = DisplayStyle.None;
 
 #if UNITY_WEBGL
         _quitLabel.style.visibility = Visibility.Hidden;
