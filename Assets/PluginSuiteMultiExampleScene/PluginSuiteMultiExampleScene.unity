@@ -207,7 +207,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4712384468836275610, guid: 274895f91d734ca458a0a4855557eb62, type: 3}
       propertyPath: m_Name
-      value: MainScreen
+      value: MultiExampleMainPanel
       objectReference: {fileID: 0}
     - target: {fileID: 4712384468836275611, guid: 274895f91d734ca458a0a4855557eb62, type: 3}
       propertyPath: m_SortingOrder

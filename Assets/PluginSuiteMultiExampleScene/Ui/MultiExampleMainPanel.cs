@@ -1,14 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UIElements;
-using System.Linq;
-using AnchorLinkTransportSharp.Examples.UiToolkit.Ui;
-using AnchorLinkTransportSharp.Src.Transports.UiToolkit.Ui;
 using UnityEngine.SceneManagement;
+using AnchorLinkTransportSharp.Examples.UiToolkit.Ui;
 using UniversalAuthenticatorLibrary.Examples.UiToolkit.Ui;
 
-public class MainScreen : MonoBehaviour
+public class MultiExampleMainPanel : MonoBehaviour
 {
     /**
      * Child-Controls
@@ -207,7 +206,9 @@ public class MainScreen : MonoBehaviour
         SceneManager.LoadScene(targetScene, LoadSceneMode.Additive);
     }
 
-    /// <summary>Called when ctrl + v is pressed in browser (webgl)</summary>
+    /// <summary>
+    /// Called when ctrl + v is pressed in browser (webgl)
+    /// </summary>
     /// <param name="pastedText">The pasted text.</param>
     public void OnBrowserClipboardPaste(string pastedText)
     {
@@ -217,24 +218,23 @@ public class MainScreen : MonoBehaviour
         switch (_currentSceneLoaded)
         {
             case "UiToolkitAnchorExampleScene":
-                MainView.OnBrowserClipboardPaste(pastedText);
+                AnchorExamplePanel.MultiExampleClipboardPaste(pastedText);
                 break;
             case "UiToolkitUALExampleScene":
-                ExampleMainView.OnBrowserClipboardPaste(pastedText);
+                UALExamplePanel.MultiExampleClipboardPaste(pastedText);
                 break;
             case "AtomicAssetsExampleScene":
-                AtomicAssetPanel.OnBrowserClipboardPaste(pastedText);
+                AtomicAssetsExamplePanel.MultiExampleClipboardPaste(pastedText);
                 break;
             case "AtomicMarketExampleScene":
-                AtomicMarketPanel.OnBrowserClipboardPaste(pastedText);
+                AtomicMarketExamplePanel.MultiExampleClipboardPaste(pastedText);
                 break;
             case "HyperionExampleScene":
-                HyperionExamplePanel.OnBrowserClipboardPaste(pastedText);
+                HyperionExamplePanel.MultiExampleClipboardPaste(pastedText);
                 break;
         }
     }
-
     #endregion
-    }
+}
 
 
