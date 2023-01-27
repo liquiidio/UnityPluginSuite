@@ -229,10 +229,19 @@ public class MultiExampleMainPanel : MonoBehaviour
         if (string.IsNullOrEmpty(pastedText))
             return;
 
+
+
+
         switch (_currentSceneLoaded)
         {
             case "UiToolkitAnchorExampleScene":
-                AnchorExamplePanel.MultiExampleClipboardPaste(pastedText);
+                SceneManager.GetSceneByName(_currentSceneLoaded)
+                            .GetRootGameObjects()
+                            .First(child => child.GetComponentInChildren<AnchorExamplePanel>())
+                            .SendMessage("OnBrowserClipboardPaste", pastedText);
+
+                print("This is the get component method");
+                //AnchorExamplePanel.MultiExampleClipboardPaste(pastedText);
                 break;
             case "UiToolkitUALExampleScene":
                 UALExamplePanel.MultiExampleClipboardPaste(pastedText);
