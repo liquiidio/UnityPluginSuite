@@ -210,7 +210,7 @@ public class MultiExampleMainPanel : MonoBehaviour
     /// Called when ctrl + v is pressed in browser (webgl)
     /// </summary>
     /// <param name="pastedText">The pasted text.</param>
-    public void OnBrowserClipboardPaste(string pastedText)
+    public void OnClipboardPaste(string pastedText)
     {
         if (string.IsNullOrEmpty(pastedText))
             return;
