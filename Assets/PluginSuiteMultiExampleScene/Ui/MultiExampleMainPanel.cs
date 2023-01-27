@@ -68,8 +68,8 @@ public class MultiExampleMainPanel : MonoBehaviour
         _widgets.ForEach(x => x.style.visibility = Visibility.Hidden);
 #endif
 
-        //_wcwLabel.style.visibility = Visibility.Hidden;
-        //_wcwLabel.style.display = DisplayStyle.None;
+        _wcwLabel.style.visibility = Visibility.Hidden;
+        _wcwLabel.style.display = DisplayStyle.None;
 
 #if UNITY_WEBGL
         _quitLabel.style.visibility = Visibility.Hidden;
@@ -78,7 +78,6 @@ public class MultiExampleMainPanel : MonoBehaviour
         _wcwLabel.style.visibility = Visibility.Visible;
         _wcwLabel.style.display = DisplayStyle.Flex;
 #endif
-
         StartCoroutine(PopupMenuAnimation());
         BindButtons();
     }
@@ -129,7 +128,6 @@ public class MultiExampleMainPanel : MonoBehaviour
 #else
             _widgets.ForEach(x => x.style.visibility = Visibility.Visible);
 #endif
-
         });
 
         _wcwLabel.RegisterCallback<ClickEvent>(evt =>
@@ -220,15 +218,6 @@ public class MultiExampleMainPanel : MonoBehaviour
         SceneManager.LoadScene(targetScene, LoadSceneMode.Additive);
     }
 
-    // @Evans Please remove this method when you're done testing
-    private void Update()
-    {
-        if (Input.GetKeyUp(KeyCode.PageUp))
-        {
-            OnClipboardPaste("Testing new method!");
-        }
-    }
-
     /// <summary>
     /// Called when ctrl + v is pressed in browser (webgl)
     /// </summary>
@@ -238,33 +227,37 @@ public class MultiExampleMainPanel : MonoBehaviour
         if (string.IsNullOrEmpty(pastedText))
             return;
 
-
-
-
         switch (_currentSceneLoaded)
         {
             case "UiToolkitAnchorExampleScene":
                 SceneManager.GetSceneByName(_currentSceneLoaded).GetRootGameObjects().ToList()
                             .Find(child => child.GetComponentInChildren<AnchorExamplePanel>())
                             .GetComponentInChildren<AnchorExamplePanel>().OnBrowserClipboardPaste(pastedText);
-
-                print("This new method works!");
-                //AnchorExamplePanel.MultiExampleClipboardPaste(pastedText);
                 break;
             case "UiToolkitUALExampleScene":
-                UALExamplePanel.MultiExampleClipboardPaste(pastedText);
+                SceneManager.GetSceneByName(_currentSceneLoaded).GetRootGameObjects().ToList()
+                            .Find(child => child.GetComponentInChildren<UALExamplePanel>())
+                            .GetComponentInChildren<UALExamplePanel>().OnBrowserClipboardPaste(pastedText);
                 break;
             case "WaxCloudWalletExampleScene":
-                WaxCloudWalletMainPanel.MultiExampleClipboardPaste(pastedText);
+                SceneManager.GetSceneByName(_currentSceneLoaded).GetRootGameObjects().ToList()
+                            .Find(child => child.GetComponentInChildren<WaxCloudWalletMainPanel>())
+                            .GetComponentInChildren<WaxCloudWalletMainPanel>().OnBrowserClipboardPaste(pastedText);
                 break;
             case "AtomicAssetsExampleScene":
-                AtomicAssetsExamplePanel.MultiExampleClipboardPaste(pastedText);
+                SceneManager.GetSceneByName(_currentSceneLoaded).GetRootGameObjects().ToList()
+                            .Find(child => child.GetComponentInChildren<AtomicAssetsExamplePanel>())
+                            .GetComponentInChildren<AtomicAssetsExamplePanel>().OnBrowserClipboardPaste(pastedText);
                 break;
             case "AtomicMarketExampleScene":
-                AtomicMarketExamplePanel.MultiExampleClipboardPaste(pastedText);
+                SceneManager.GetSceneByName(_currentSceneLoaded).GetRootGameObjects().ToList()
+                            .Find(child => child.GetComponentInChildren<AtomicMarketExamplePanel>())
+                            .GetComponentInChildren<AtomicMarketExamplePanel>().OnBrowserClipboardPaste(pastedText);
                 break;
             case "HyperionExampleScene":
-                HyperionExamplePanel.MultiExampleClipboardPaste(pastedText);
+                SceneManager.GetSceneByName(_currentSceneLoaded).GetRootGameObjects().ToList()
+                            .Find(child => child.GetComponentInChildren<HyperionExamplePanel>())
+                            .GetComponentInChildren<HyperionExamplePanel>().OnBrowserClipboardPaste(pastedText);
                 break;
         }
     }

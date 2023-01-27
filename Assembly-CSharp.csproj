@@ -141,7 +141,7 @@
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Models\Percentiles.cs" />
     <Compile Include="Assets\Packages\anchorlinksharp\AnchorLinkSharp\ILinkStorage.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Responses\GetControlledAccountsResponse.cs" />
-    <Compile Include="Assets\Packages\wcwunitywebgl\Examples\Ui\LoginView.cs" />
+    <Compile Include="Assets\Packages\wcwunitywebgl\Examples\Ui\WaxCloudWalletLoginPanel.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Models\Net.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Models\Abi.cs" />
     <Compile Include="Assets\Packages\anchorlinksharp\eosiosigningrequestsharp\SigningRequestAbi.cs" />
@@ -201,7 +201,7 @@
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Models\Stats.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Responses\GetProducersResponse.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Responses\GetCodeResponse.cs" />
-    <Compile Include="Assets\Packages\wcwunitywebgl\Examples\Ui\MainView.cs" />
+    <Compile Include="Assets\Packages\wcwunitywebgl\Examples\Ui\WaxCloudWalletMainPanel.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Responses\GetCreatedAccountsResponse.cs" />
     <Compile Include="Assets\Packages\wombatunitywebgl\Src\Network.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\Src\HyperionApiClient\Models\Account2.cs" />
@@ -323,14 +323,14 @@
     <None Include="Assets\Packages\hyperionapiclient\Examples\UiToolkit\UI\HyperionExamplePanel.uxml" />
     <None Include="Assets\Packages\anchorlinksharp\anchorlinktransportsharp\Src\Transports\UiToolkit\Ui\TimeoutPanel.uxml" />
     <None Include="Assets\Packages\hyperionapiclient\Examples\UiToolkit\UI\HyperionErrorPanel.uxml" />
-    <None Include="Assets\Packages\wcwunitywebgl\Examples\Ui\LoginView.uxml" />
+    <None Include="Assets\Packages\wcwunitywebgl\Examples\Ui\WaxCloudWalletLoginPanel.uxml" />
     <None Include="Assets\Packages\atomicmarketapiclient\Examples\UiToolkit\Stylesheet\AtomicMarketUSSFile.uss" />
     <None Include="Assets\Packages\wombatunitywebgl\Examples\Ui\LoginView.uxml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\Packages\anchorlinksharp\anchorlinktransportsharp\Src\Transports\UiToolkit\Ui\LoadingPanel.uxml" />
     <None Include="Assets\Packages\anchorlinksharp\anchorlinktransportsharp\Examples\UiToolkit\Ui\AnchorExamplePanel.uxml" />
-    <None Include="Assets\Packages\wcwunitywebgl\Examples\Ui\MainView.uxml" />
+    <None Include="Assets\Packages\wcwunitywebgl\Examples\Ui\WaxCloudWalletMainPanel.uxml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\Packages\Cryptography.ECDSA.dll" />
     <None Include="Assets\Packages\anchorlinksharp\anchorlinktransportsharp\Src\Transports\UiToolkit\Ui\SigningTimerPanel.uxml" />
@@ -360,7 +360,7 @@
     <None Include="Assets\Packages\universalauthenticatorlibrary\Src\UiToolkit\Ui\AuthenticatorButtonItem.uxml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
-    <None Include="Assets\Packages\wcwunitywebgl\Examples\Stylesheet\AnchorUSSFile.uss" />
+    <None Include="Assets\Packages\wcwunitywebgl\Examples\Stylesheet\WCWUSSFile.uss" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
