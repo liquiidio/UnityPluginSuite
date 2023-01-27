@@ -220,6 +220,15 @@ public class MultiExampleMainPanel : MonoBehaviour
         SceneManager.LoadScene(targetScene, LoadSceneMode.Additive);
     }
 
+    // @Evans Please remove this method when you're done testing
+    private void Update()
+    {
+        if (Input.GetKeyUp(KeyCode.PageUp))
+        {
+            OnClipboardPaste("Testing new method!");
+        }
+    }
+
     /// <summary>
     /// Called when ctrl + v is pressed in browser (webgl)
     /// </summary>
@@ -232,7 +241,13 @@ public class MultiExampleMainPanel : MonoBehaviour
         switch (_currentSceneLoaded)
         {
             case "UiToolkitAnchorExampleScene":
-                AnchorExamplePanel.MultiExampleClipboardPaste(pastedText);
+                SceneManager.GetSceneByName(_currentSceneLoaded).GetRootGameObjects().ToList()
+                            .Find(child => child.GetComponentInChildren<AnchorExamplePanel>())
+                            .GetComponentInChildren<AnchorExamplePanel>().OnBrowserClipboardPaste(pastedText);
+
+                print("This new method works!");
+
+                //AnchorExamplePanel.MultiExampleClipboardPaste(pastedText);
                 break;
             case "UiToolkitUALExampleScene":
                 UALExamplePanel.MultiExampleClipboardPaste(pastedText);
