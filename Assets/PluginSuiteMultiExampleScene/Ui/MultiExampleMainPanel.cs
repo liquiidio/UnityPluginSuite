@@ -1,10 +1,13 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using AnchorLinkTransportSharp.Examples.Canvas;
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
 using AnchorLinkTransportSharp.Examples.UiToolkit.Ui;
+using UniversalAuthenticatorLibrary.Examples.Canvas;
 using UniversalAuthenticatorLibrary.Examples.UiToolkit.Ui;
 using WaxCloudWalletUnity.Examples.Ui;
 
@@ -68,8 +71,8 @@ public class MultiExampleMainPanel : MonoBehaviour
         _widgets.ForEach(x => x.style.visibility = Visibility.Hidden);
 #endif
 
-        _wcwLabel.style.visibility = Visibility.Hidden;
-        _wcwLabel.style.display = DisplayStyle.None;
+        //_wcwLabel.style.visibility = Visibility.Hidden;
+        //_wcwLabel.style.display = DisplayStyle.None;
 
 #if UNITY_WEBGL
         _quitLabel.style.visibility = Visibility.Hidden;
@@ -229,6 +232,7 @@ public class MultiExampleMainPanel : MonoBehaviour
 
         switch (_currentSceneLoaded)
         {
+            /* UI Toolkit targets */
             case "UiToolkitAnchorExampleScene":
                 SceneManager.GetSceneByName(_currentSceneLoaded).GetRootGameObjects().ToList()
                             .Find(child => child.GetComponentInChildren<AnchorExamplePanel>())
@@ -259,7 +263,22 @@ public class MultiExampleMainPanel : MonoBehaviour
                             .Find(child => child.GetComponentInChildren<HyperionExamplePanel>())
                             .GetComponentInChildren<HyperionExamplePanel>().OnBrowserClipboardPaste(pastedText);
                 break;
+            /* Canvas targets */
+            case "CanvasAnchorExampleScene":
+                SceneManager.GetSceneByName(_currentSceneLoaded).GetRootGameObjects().ToList()
+                            .Find(child => child.GetComponentInChildren<CanvasExample>())
+                            .GetComponentInChildren<CanvasExample>().OnBrowserClipboardPaste(pastedText);
+                print("This function to paste is being called!");
+                break;
+            case "CanvasUALExampleScene":
+                SceneManager.GetSceneByName(_currentSceneLoaded).GetRootGameObjects().ToList()
+                            .Find(child => child.GetComponentInChildren<UALCanvasExample>())
+                            .GetComponentInChildren<UALCanvasExample>().OnBrowserClipboardPaste(pastedText);
+                print("This function to paste is being called!");
+                break;
         }
+
+
     }
     #endregion
 }

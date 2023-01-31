@@ -1,6 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/PluginSuiteMultiExampleScene/Stylesheet/MultiExampleUSSFile.uss?fileID=7433441132597879392&amp;guid=bb3ae460d5f563e469032fa8b2a49c9f&amp;type=3#MultiExampleUSSFile" />
-    <ui:VisualElement name="screen" style="display: flex; visibility: visible;">
+    <ui:VisualElement name="screen" style="display: flex; visibility: visible; position: relative; width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/PluginSuiteMultiExampleScene/Sprites/11%20HRRed%20Alert.jpg?fileID=2800000&amp;guid=a761484c670d3ae4daec93e493521228&amp;type=3#11 HRRed Alert&apos;);">
         <ui:VisualElement name="menu" class="pop-animation-hide" style="transform-origin: left; transition-property: all;">
             <ui:VisualElement name="navigation" style="flex-grow: 1; opacity: 1;">
                 <ui:VisualElement name="main-nav">
@@ -15,8 +15,8 @@
             </ui:VisualElement>
             <ui:VisualElement name="decorative-bar" />
         </ui:VisualElement>
-        <ui:VisualElement name="content" style="flex-grow: 1; align-items: flex-end; justify-content: center;">
-            <ui:Label text="Example&#10;Scenes" display-tooltip-when-elided="true" name="header" style="-unity-font: url(&apos;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&amp;guid=dbd42bac0de017e4e8e7afa4304982ea&amp;type=3#NotInter-Regular&apos;); font-size: 30px; -unity-font-style: bold; color: rgb(255, 255, 255);" />
+        <ui:VisualElement name="content" style="flex-grow: 1; align-items: center; justify-content: center;">
+            <ui:Label text="Example&#10;Scenes" display-tooltip-when-elided="true" name="header" style="-unity-font: url(&apos;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&amp;guid=dbd42bac0de017e4e8e7afa4304982ea&amp;type=3#NotInter-Regular&apos;); font-size: 30px; -unity-font-style: bold; color: rgb(255, 255, 255); width: 90%; margin-top: 25px;" />
             <ui:Label text="Example&#10;Scenes" display-tooltip-when-elided="true" name="header" class="header-label" style="-unity-font: none; -unity-font-definition: none; position: relative; top: auto;" />
             <ui:VisualElement name="body">
                 <ui:VisualElement name="canvas-widget-container" class="widget-container" style="translate: 0 0;">
@@ -30,7 +30,7 @@
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="mask-box" style="position: absolute; width: 100%; height: 100%; background-color: rgba(94, 91, 91, 0.62); align-items: auto;">
-            <ui:Button display-tooltip-when-elided="true" name="close-view-button" text="Close" class="label-tag" style="height: 40px; width: 106px; position: relative; -unity-font-style: bold; font-size: 18px; background-image: none; background-color: rgb(88, 88, 88); border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); right: 10px; top: auto; border-top-left-radius: 6px; border-bottom-left-radius: 6px; border-top-right-radius: 6px; border-bottom-right-radius: 6px; -unity-font: url(&apos;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&amp;guid=dbd42bac0de017e4e8e7afa4304982ea&amp;type=3#NotInter-Regular&apos;);" />
+            <ui:Button display-tooltip-when-elided="true" name="close-view-button" class="close-view-button" style="background-color: rgba(0, 0, 0, 0); border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); background-image: url(&apos;project://database/Assets/Packages/universalauthenticatorlibrary/Assets/icons/cross.png?fileID=2800000&amp;guid=6230d4d9ab5968e4792bc59788d2ac44&amp;type=3#cross&apos;); -unity-background-image-tint-color: rgba(255, 255, 255, 255);" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
