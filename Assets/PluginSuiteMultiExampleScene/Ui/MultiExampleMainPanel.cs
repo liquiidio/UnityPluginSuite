@@ -1,11 +1,17 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using AnchorLinkTransportSharp.Examples.Canvas;
 using UnityEngine;
 using UnityEngine.UIElements;
-using System.Linq;
 using UnityEngine.SceneManagement;
+using AnchorLinkTransportSharp.Examples.UiToolkit.Ui;
+using UniversalAuthenticatorLibrary.Examples.Canvas;
+using UniversalAuthenticatorLibrary.Examples.UiToolkit.Ui;
+using WaxCloudWalletUnity.Examples.Ui;
 
-public class MainScreen : MonoBehaviour
+public class MultiExampleMainPanel : MonoBehaviour
 {
     /**
      * Child-Controls
@@ -19,6 +25,7 @@ public class MainScreen : MonoBehaviour
 
     private Label _anchorLabel;
     private Label _ualLabel;
+    private Label _wcwLabel;
     private Label _atomicAssetLabel;
     private Label _atomicMarketLabel;
     private Label _hyperionLabel;
@@ -33,7 +40,6 @@ public class MainScreen : MonoBehaviour
 
     private string _currentSceneLoaded = "";
     private string _clickedButtonName = string.Empty;
-
 
     void Start()
     {
@@ -51,6 +57,7 @@ public class MainScreen : MonoBehaviour
 
         _anchorLabel = root.Q<Label>("anchor-label");
         _ualLabel = root.Q<Label>("ual-label");
+        _wcwLabel = root.Q<Label>("wcw-label");
         _atomicAssetLabel = root.Q<Label>("atomic-asset-label");
         _atomicMarketLabel = root.Q<Label>("atomic-market-label");
         _hyperionLabel = root.Q<Label>("hyperion-label");
@@ -64,11 +71,16 @@ public class MainScreen : MonoBehaviour
         _widgets.ForEach(x => x.style.visibility = Visibility.Hidden);
 #endif
 
+        //_wcwLabel.style.visibility = Visibility.Hidden;
+        //_wcwLabel.style.display = DisplayStyle.None;
+
 #if UNITY_WEBGL
         _quitLabel.style.visibility = Visibility.Hidden;
         _quitLabel.style.display = DisplayStyle.None;
+        
+        _wcwLabel.style.visibility = Visibility.Visible;
+        _wcwLabel.style.display = DisplayStyle.Flex;
 #endif
-
         StartCoroutine(PopupMenuAnimation());
         BindButtons();
     }
@@ -119,7 +131,11 @@ public class MainScreen : MonoBehaviour
 #else
             _widgets.ForEach(x => x.style.visibility = Visibility.Visible);
 #endif
+        });
 
+        _wcwLabel.RegisterCallback<ClickEvent>(evt =>
+        {
+            LoadScene("WaxCloudWalletExampleScene");
         });
 
         _atomicAssetLabel.RegisterCallback<ClickEvent>(evt =>
@@ -205,6 +221,65 @@ public class MainScreen : MonoBehaviour
         SceneManager.LoadScene(targetScene, LoadSceneMode.Additive);
     }
 
+    /// <summary>
+    /// Called when ctrl + v is pressed in browser (webgl)
+    /// </summary>
+    /// <param name="pastedText">The pasted text.</param>
+    public void OnClipboardPaste(string pastedText)
+    {
+        if (string.IsNullOrEmpty(pastedText))
+            return;
+
+        switch (_currentSceneLoaded)
+        {
+            /* UI Toolkit targets */
+            case "UiToolkitAnchorExampleScene":
+                SceneManager.GetSceneByName(_currentSceneLoaded).GetRootGameObjects().ToList()
+                            .Find(child => child.GetComponentInChildren<AnchorExamplePanel>())
+                            .GetComponentInChildren<AnchorExamplePanel>().OnBrowserClipboardPaste(pastedText);
+                break;
+            case "UiToolkitUALExampleScene":
+                SceneManager.GetSceneByName(_currentSceneLoaded).GetRootGameObjects().ToList()
+                            .Find(child => child.GetComponentInChildren<UALExamplePanel>())
+                            .GetComponentInChildren<UALExamplePanel>().OnBrowserClipboardPaste(pastedText);
+                break;
+            case "WaxCloudWalletExampleScene":
+                SceneManager.GetSceneByName(_currentSceneLoaded).GetRootGameObjects().ToList()
+                            .Find(child => child.GetComponentInChildren<WaxCloudWalletMainPanel>())
+                            .GetComponentInChildren<WaxCloudWalletMainPanel>().OnBrowserClipboardPaste(pastedText);
+                break;
+            case "AtomicAssetsExampleScene":
+                SceneManager.GetSceneByName(_currentSceneLoaded).GetRootGameObjects().ToList()
+                            .Find(child => child.GetComponentInChildren<AtomicAssetsExamplePanel>())
+                            .GetComponentInChildren<AtomicAssetsExamplePanel>().OnBrowserClipboardPaste(pastedText);
+                break;
+            case "AtomicMarketExampleScene":
+                SceneManager.GetSceneByName(_currentSceneLoaded).GetRootGameObjects().ToList()
+                            .Find(child => child.GetComponentInChildren<AtomicMarketExamplePanel>())
+                            .GetComponentInChildren<AtomicMarketExamplePanel>().OnBrowserClipboardPaste(pastedText);
+                break;
+            case "HyperionExampleScene":
+                SceneManager.GetSceneByName(_currentSceneLoaded).GetRootGameObjects().ToList()
+                            .Find(child => child.GetComponentInChildren<HyperionExamplePanel>())
+                            .GetComponentInChildren<HyperionExamplePanel>().OnBrowserClipboardPaste(pastedText);
+                break;
+            /* Canvas targets */
+            case "CanvasAnchorExampleScene":
+                SceneManager.GetSceneByName(_currentSceneLoaded).GetRootGameObjects().ToList()
+                            .Find(child => child.GetComponentInChildren<CanvasExample>())
+                            .GetComponentInChildren<CanvasExample>().OnBrowserClipboardPaste(pastedText);
+                print("This function to paste is being called!");
+                break;
+            case "CanvasUALExampleScene":
+                SceneManager.GetSceneByName(_currentSceneLoaded).GetRootGameObjects().ToList()
+                            .Find(child => child.GetComponentInChildren<UALCanvasExample>())
+                            .GetComponentInChildren<UALCanvasExample>().OnBrowserClipboardPaste(pastedText);
+                print("This function to paste is being called!");
+                break;
+        }
+
+
+    }
     #endregion
 }
 

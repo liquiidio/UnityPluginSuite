@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -207,7 +207,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4712384468836275610, guid: 274895f91d734ca458a0a4855557eb62, type: 3}
       propertyPath: m_Name
-      value: MainScreen
+      value: MultiExampleMainPanel
       objectReference: {fileID: 0}
     - target: {fileID: 4712384468836275611, guid: 274895f91d734ca458a0a4855557eb62, type: 3}
       propertyPath: m_SortingOrder
@@ -259,6 +259,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4712384468836275613, guid: 274895f91d734ca458a0a4855557eb62, type: 3}
       propertyPath: CloseMask
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4712384468836275613, guid: 274895f91d734ca458a0a4855557eb62, type: 3}
+      propertyPath: AtomicAssetPanel
       value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
