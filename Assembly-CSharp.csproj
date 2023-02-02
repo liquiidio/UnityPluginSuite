@@ -332,7 +332,7 @@
     <None Include="Assets\Packages\anchorlinksharp\anchorlinktransportsharp\Examples\UiToolkit\Ui\AnchorExamplePanel.uxml" />
     <None Include="Assets\Packages\wcwunitywebgl\Examples\Ui\WaxCloudWalletMainPanel.uxml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\Packages\Cryptography.ECDSA.dll" />
+    <None Include="Assets\Packages\eossharp\Cryptography.ECDSA.dll" />
     <None Include="Assets\Packages\anchorlinksharp\anchorlinktransportsharp\Src\Transports\UiToolkit\Ui\SigningTimerPanel.uxml" />
     <None Include="Assets\Packages\universalauthenticatorlibrary\Src\UiToolkit\StyleSheets\UALStyle.uss" />
     <None Include="Assets\Packages\atomicassetsapiclient\Examples\UiToolkit\UI\AtomicAssetsErrorPanel.uxml" />
@@ -613,14 +613,14 @@
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>C:\Program Files\Unity 2021.3.11f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
+    <Reference Include="Cryptography.ECDSA">
+      <HintPath>Assets\Packages\eossharp\Cryptography.ECDSA.dll</HintPath>
+    </Reference>
     <Reference Include="zxing.unity">
       <HintPath>Assets\Packages\anchorlinksharp\anchorlinktransportsharp\Packages\ZXing\unity\zxing.unity.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Cryptography.ECDSA">
-      <HintPath>Assets\Packages\Cryptography.ECDSA.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Android.Types">
       <HintPath>C:\Program Files\Unity 2021.3.11f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
