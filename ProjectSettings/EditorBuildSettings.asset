@@ -6,17 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Packages/universalauthenticatorlibrary/Examples/Canvas/CanvasScene.unity
+    path: Assets/Packages/universalauthenticatorlibrary/Examples/Canvas/CanvasUALExampleScene.unity
     guid: 9a7909b7c4c05874cb359624038e2c9d
   - enabled: 1
     path: Assets/Packages/universalauthenticatorlibrary/Examples/UiToolkit/UiToolkitUALExampleScene.unity
     guid: b1d9ce7bf04465048a2ee87c7857b90b
   - enabled: 1
-    path: Assets/Packages/anchorlinksharp/anchorlinktransportsharp/Examples/Canvas/ExampleCanvasScene.unity
+    path: Assets/Packages/anchorlinksharp/anchorlinktransportsharp/Examples/Canvas/CanvasAnchorExampleScene.unity
     guid: 93436d97ee043924ebb50a190563bc55
   - enabled: 1
     path: Assets/Packages/anchorlinksharp/anchorlinktransportsharp/Examples/UiToolkit/UiToolkitAnchorExampleScene.unity
     guid: e7fb44befa3d1ec48b4658f3235dd29e
+  - enabled: 1
+    path: Assets/Packages/wcwunitywebgl/Examples/WaxCloudWalletExampleScene.unity
+    guid: 89bda9a81ab01b241a2d61bd47018ee6
   - enabled: 1
     path: Assets/Packages/atomicassetsapiclient/Examples/UiToolkit/AtomicAssetsExampleScene.unity
     guid: da2d7aed1fa6e11489c5e18e50c69747
