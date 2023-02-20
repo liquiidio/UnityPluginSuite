@@ -781,10 +781,6 @@
       <Project>{79551437-24B4-0C89-335E-87E244EE1E64}</Project>
       <Name>WombatUnityWebgl</Name>
     </ProjectReference>
-    <ProjectReference Include="UniversalSDK.csproj">
-      <Project>{2A77B88F-5C60-2D15-A28B-3032BC4CDB5E}</Project>
-      <Name>UniversalSDK</Name>
-    </ProjectReference>
     <ProjectReference Include="WcwUnityWebgl.csproj">
       <Project>{2DCF1559-B9DC-947C-1611-79FA751CD4D0}</Project>
       <Name>WcwUnityWebgl</Name>
