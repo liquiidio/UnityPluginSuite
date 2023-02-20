@@ -25,6 +25,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EosSharp", "EosSharp.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{976333ED-E96F-B856-2B0C-A3342BFEBCEB}"
 EndProject
+<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEditor.TestRunner", "UnityEditor.TestRunner.csproj", "{ECF4B19B-D5E4-1938-7B03-DB9491D77A81}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.VisualStudio.Editor", "Unity.VisualStudio.Editor.csproj", "{B920E64B-741A-2FBB-521F-243B96DD50F6}"
@@ -41,6 +42,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Toolchain.Win-x86_64-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Sysroot.Linux_x86_64", "Unity.Sysroot.Linux_x86_64.csproj", "{6989EA2B-0FE7-3D96-9BA9-FFDEFE8CE60F}"
 EndProject
+=======
+>>>>>>> 7804c37729e064b5a3afed14a51092490fc7f8dc
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -95,6 +98,7 @@ Global
 		{976333ED-E96F-B856-2B0C-A3342BFEBCEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{976333ED-E96F-B856-2B0C-A3342BFEBCEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{976333ED-E96F-B856-2B0C-A3342BFEBCEB}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
 		{ECF4B19B-D5E4-1938-7B03-DB9491D77A81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{ECF4B19B-D5E4-1938-7B03-DB9491D77A81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECF4B19B-D5E4-1938-7B03-DB9491D77A81}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -127,6 +131,8 @@ Global
 		{6989EA2B-0FE7-3D96-9BA9-FFDEFE8CE60F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6989EA2B-0FE7-3D96-9BA9-FFDEFE8CE60F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6989EA2B-0FE7-3D96-9BA9-FFDEFE8CE60F}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+>>>>>>> 7804c37729e064b5a3afed14a51092490fc7f8dc
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
