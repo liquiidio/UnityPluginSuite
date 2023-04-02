@@ -19,8 +19,7 @@ public class MultiExampleMainPanel : MonoBehaviour
     private VisualElement _menu;
     private VisualElement _maskBox;
     private VisualElement _canvasWidgetScene;
-    private VisualElement _uiTookitWidgetScene;
-    private VisualElement[] _mainMenuOptions;
+    private VisualElement _uiToolkitWidgetScene;
     private List<VisualElement> _widgets;
 
     private Label _anchorLabel;
@@ -50,10 +49,10 @@ public class MultiExampleMainPanel : MonoBehaviour
         _maskBox.style.visibility = Visibility.Hidden;
         _maskBox.style.display = DisplayStyle.None;
 
-        _mainMenuOptions = _menu.Q<VisualElement>("main-nav").Children().ToArray();
+        var visualElements = _menu.Q<VisualElement>("main-nav").Children().ToArray();
         _widgets = root.Q<VisualElement>("body").Children().ToList();
         _canvasWidgetScene = root.Q<VisualElement>("canvas-widget-container");
-        _uiTookitWidgetScene = root.Q<VisualElement>("ui-toolkit-widget-container");
+        _uiToolkitWidgetScene = root.Q<VisualElement>("ui-toolkit-widget-container");
 
         _anchorLabel = root.Q<Label>("anchor-label");
         _ualLabel = root.Q<Label>("ual-label");
@@ -171,7 +170,7 @@ public class MultiExampleMainPanel : MonoBehaviour
             }
         });
 
-        _uiTookitWidgetScene.RegisterCallback<ClickEvent>(evt =>
+        _uiToolkitWidgetScene.RegisterCallback<ClickEvent>(evt =>
         {
             switch (_clickedButtonName)
             {
