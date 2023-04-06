@@ -7,6 +7,17 @@
 # or wget:
 # wget --no-check-certificate http://gist.githubusercontent.com/kmorcinek/2710267/raw/.gitignore
 
+
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Rr]ecordings/
+[Uu]serSettings/Layouts/
+
+
 # User-specific files
 *.suo
 *.user
@@ -21,15 +32,6 @@ x64/
 # build folder is nowadays used for build scripts and should not be ignored
 #build/
 
-# NuGet Packages
-*.nupkg
-# The packages folder can be ignored because of Package Restore
-**/packages/*
-# except build/, which is used as an MSBuild target.
-!**/packages/build/
-# Uncomment if necessary however generally it will be regenerated when needed
-#!**/packages/repositories.config
-
 # MSTest test Results
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
@@ -37,7 +39,6 @@ x64/
 *_i.c
 *_p.c
 *.ilk
-*.meta
 *.obj
 *.pch
 *.pdb
@@ -57,10 +58,6 @@ x64/
 *.pidb
 *.log
 *.scc
-
-# OS generated files #
-.DS_Store*
-Icon?
 
 # Visual C++ cache files
 ipch/
@@ -223,3 +220,5 @@ project.lock.json
 #####
 # End of core ignore list, below put you custom 'per project' settings (patterns or path)
 #####
+
+*.csproj
