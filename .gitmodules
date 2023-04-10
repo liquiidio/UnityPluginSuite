@@ -1,30 +1,27 @@
 [submodule "Assets/Packages/eosiosigningrequestsharp"]
 	path = Assets/Packages/eosiosigningrequestsharp
-	url = https://github.com/liquiidio/EosioSigningRequestSharp-Private.git
+	url = https://github.com/liquiidio/EosioSigningRequestSharp.git
 [submodule "Assets/Packages/anchorlinksharp"]
 	path = Assets/Packages/anchorlinksharp
-	url = https://github.com/liquiidio/AnchorLinkSharp-Private
+	url = https://github.com/liquiidio/AnchorLinkSharp
 [submodule "Assets/Packages/anchorlinktransportsharp"]
 	path = Assets/Packages/anchorlinktransportsharp
-	url = https://github.com/liquiidio/AnchorLinkTransportSharp-Private
+	url = https://github.com/liquiidio/AnchorLinkTransportSharp
 [submodule "Assets/Packages/atomicassetsapiclient"]
 	path = Assets/Packages/atomicassetsapiclient
-	url = https://github.com/liquiidio/AtomicAssetsApiClient-Private
+	url = https://github.com/liquiidio/AtomicAssetsApiClient
 [submodule "Assets/Packages/atomicmarketapiclient"]
 	path = Assets/Packages/atomicmarketapiclient
-	url = https://github.com/liquiidio/AtomicMarketApiClient-Private
+	url = https://github.com/liquiidio/AtomicMarketApiClient
 [submodule "Assets/Packages/hyperionapiclient"]
 	path = Assets/Packages/hyperionapiclient
-	url = https://github.com/liquiidio/HyperionApiClient-Private
+	url = https://github.com/liquiidio/HyperionApiClient
 [submodule "Assets/Packages/eossharp"]
 	path = Assets/Packages/eossharp
-	url = https://github.com/liquiidio/EosSharp-Private.git
+	url = https://github.com/liquiidio/EosSharp.git
 [submodule "Assets/Packages/universalauthenticatorlibrary"]
 	path = Assets/Packages/universalauthenticatorlibrary
 	url = https://github.com/liquiidio/UniversalAuthenticatorLibrarySharp
-[submodule "Assets/Packages/wombatunitywebgl"]
-	path = Assets/Packages/wombatunitywebgl
-	url = https://github.com/liquiidio/WombatUnityWebGl
 [submodule "Assets/Packages/WcwUnity"]
 	path = Assets/Packages/WcwUnity
 	url = https://github.com/liquiidio/WcwUnity.git
