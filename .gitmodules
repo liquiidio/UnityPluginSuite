@@ -22,6 +22,6 @@
 [submodule "Assets/Packages/universalauthenticatorlibrary"]
 	path = Assets/Packages/universalauthenticatorlibrary
 	url = https://github.com/liquiidio/UniversalAuthenticatorLibrarySharp
-[submodule "Assets/Packages/WcwUnity"]
-	path = Assets/Packages/WcwUnity
-	url = https://github.com/liquiidio/WcwUnity.git
+[submodule "Assets/Packages/cloudwallet"]
+	path = Assets/Packages/cloudwallet
+	url = https://github.com/liquiidio/CloudWalletUnity.git
