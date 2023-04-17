@@ -57,7 +57,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Packages\atomicmarketapiclient\Examples\UiToolkit\Ui\AtomicMarketExamplePanel.cs" />
+    <Compile Include="Assets\Packages\hyperionapiclient\HyperionApiClient\Clients\AccountsClient.cs" />
+    <Compile Include="Assets\Packages\hyperionapiclient\HyperionApiClient\Clients\StatusClient.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\Examples\UiToolkit\UI\HyperionErrorPanel.cs" />
+    <Compile Include="Assets\Packages\hyperionapiclient\HyperionApiClient\Clients\ChainClient.cs" />
     <Compile Include="Assets\Packages\atomicmarketapiclient\Examples\UiToolkit\Ui\AtomicMarketErrorPanel.cs" />
     <Compile Include="Assets\Packages\atomicassetsapiclient\Examples\UiToolkit\UI\AtomicAssetsExamplePanel.cs" />
     <Compile Include="Assets\Packages\hyperionapiclient\Examples\UiToolkit\UI\HyperionExamplePanel.cs" />
