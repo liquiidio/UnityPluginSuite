@@ -1,12 +1,6 @@
-[submodule "Assets/Packages/eosiosigningrequestsharp"]
-	path = Assets/Packages/eosiosigningrequestsharp
-	url = https://github.com/liquiidio/EosioSigningRequestSharp.git
 [submodule "Assets/Packages/anchorlinksharp"]
 	path = Assets/Packages/anchorlinksharp
 	url = https://github.com/liquiidio/AnchorLinkSharp
-[submodule "Assets/Packages/anchorlinktransportsharp"]
-	path = Assets/Packages/anchorlinktransportsharp
-	url = https://github.com/liquiidio/AnchorLinkTransportSharp
 [submodule "Assets/Packages/atomicassetsapiclient"]
 	path = Assets/Packages/atomicassetsapiclient
 	url = https://github.com/liquiidio/AtomicAssetsApiClient
@@ -16,9 +10,6 @@
 [submodule "Assets/Packages/hyperionapiclient"]
 	path = Assets/Packages/hyperionapiclient
 	url = https://github.com/liquiidio/HyperionApiClient
-[submodule "Assets/Packages/eossharp"]
-	path = Assets/Packages/eossharp
-	url = https://github.com/liquiidio/EosSharp.git
 [submodule "Assets/Packages/universalauthenticatorlibrary"]
 	path = Assets/Packages/universalauthenticatorlibrary
 	url = https://github.com/liquiidio/UniversalAuthenticatorLibrarySharp
