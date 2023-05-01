@@ -78,7 +78,6 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\Packages\eossharp\Cryptography.ECDSA.dll" />
     <None Include="Assets\Packages\atomicassetsapiclient\Examples\UiToolkit\UI\AtomicAssetsErrorPanel.uxml" />
     <None Include="Assets\Packages\atomicmarketapiclient\Examples\UiToolkit\Ui\AtomicMarketErrorPanel.uxml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
@@ -350,10 +349,10 @@
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.22f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="Cryptography.ECDSA">
-      <HintPath>Assets\Packages\eossharp\Cryptography.ECDSA.dll</HintPath>
+      <HintPath>Assets\Packages\anchorlinksharp\EosSharp\Cryptography.ECDSA.dll</HintPath>
     </Reference>
     <Reference Include="zxing.unity">
-      <HintPath>Assets\Packages\anchorlinksharp\anchorlinktransportsharp\Packages\ZXing\unity\zxing.unity.dll</HintPath>
+      <HintPath>Assets\Packages\anchorlinksharp\AnchorLinkTransportSharp\Packages\ZXing\unity\zxing.unity.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.1.0\Runtime\Newtonsoft.Json.dll</HintPath>
